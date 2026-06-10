@@ -1,0 +1,33 @@
+﻿2026-06-10 09:29:07 | skills_analyzer | INFO | main | Starting analysis with config: skills_repo=./cache/skills-repo
+2026-06-10 09:29:07 | skills_analyzer | INFO | main | Skill names: ['huawei-cloud-cce-cluster-management']
+2026-06-10 09:29:07 | skills_analyzer | INFO | main | Resume mode: False
+2026-06-10 09:29:07 | skills_analyzer | INFO | main | LLM enhanced: enabled
+2026-06-10 09:29:07 | skills_analyzer | INFO | main | LLM provider: openai, model: glm-5.1
+2026-06-10 09:29:07 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-cce-cluster-management
+2026-06-10 09:29:07 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-10 09:29:07 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-10 09:29:07 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-10 09:29:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-10 09:29:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-10 09:29:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-10 09:29:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-10 09:29:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-cce-cluster-management -> SDK (CLI evidence: 0, SDK evidence: 46)
+2026-06-10 09:29:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
+2026-06-10 09:29:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-10 09:29:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 25 dependencies found
+2026-06-10 09:29:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-10 09:29:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 1 Open APIs mapped, 184 mappings failed
+2026-06-10 09:29:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 1 Open APIs found
+2026-06-10 09:29:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-10 09:29:11 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 1 APIs analyzed
+2026-06-10 09:29:11 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-10 09:29:11 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-cce-cluster-management_analysis_report.md
+2026-06-10 09:29:11 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-cce-cluster-management_analysis_report.md
+2026-06-10 09:29:11 | skills_analyzer | INFO | main | 
+============================================================
+2026-06-10 09:29:11 | skills_analyzer | INFO | main | Analysis Summary
+2026-06-10 09:29:11 | skills_analyzer | INFO | main | ============================================================
+2026-06-10 09:29:11 | skills_analyzer | INFO | main |   huawei-cloud-cce-cluster-management: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
+2026-06-10 09:29:11 | skills_analyzer | INFO | main | 
+Total: 1 skills analyzed
+2026-06-10 09:29:11 | skills_analyzer | INFO | main |   Completed: 1, Partial: 0, Failed: 0

@@ -1,0 +1,82 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Developer\huaweicloud-skills-analyzer
+configfile: pyproject.toml
+plugins: anyio-4.13.0, langsmith-0.8.9, mock-3.15.1
+collecting ... collected 62 items
+
+tests/test_analyzers/test_cli_coverage_analyzer.py::test_exact_coverage PASSED [  1%]
+tests/test_analyzers/test_cli_coverage_analyzer.py::test_not_covered PASSED [  3%]
+tests/test_analyzers/test_cli_coverage_analyzer.py::test_fuzzy_coverage PASSED [  4%]
+tests/test_analyzers/test_cli_coverage_analyzer.py::test_gap_identification PASSED [  6%]
+tests/test_analyzers/test_cli_coverage_analyzer.py::test_alternative_search PASSED [  8%]
+tests/test_analyzers/test_impl_type_detector.py::test_detect_sdk_only PASSED [  9%]
+tests/test_analyzers/test_impl_type_detector.py::test_detect_cli_only PASSED [ 11%]
+tests/test_analyzers/test_impl_type_detector.py::test_detect_hybrid PASSED [ 12%]
+tests/test_analyzers/test_impl_type_detector.py::test_detect_unknown PASSED [ 14%]
+tests/test_analyzers/test_impl_type_detector.py::test_detect_cli_in_shell_script PASSED [ 16%]
+tests/test_analyzers/test_impl_type_detector.py::test_business_goal_from_readme PASSED [ 17%]
+tests/test_analyzers/test_report_generator.py::test_report_generation PASSED [ 19%]
+tests/test_analyzers/test_report_generator.py::test_report_has_all_sections PASSED [ 20%]
+tests/test_analyzers/test_report_generator.py::test_report_desensitization PASSED [ 22%]
+tests/test_llm/test_llm_client.py::test_llm_client_not_available_without_key PASSED [ 24%]
+tests/test_llm/test_llm_client.py::test_llm_client_analyze_returns_none_when_unavailable PASSED [ 25%]
+tests/test_llm/test_llm_client.py::test_llm_client_analyze_with_mock_provider PASSED [ 27%]
+tests/test_llm/test_llm_client.py::test_llm_client_retry_on_failure PASSED [ 29%]
+tests/test_llm/test_llm_client.py::test_llm_client_all_retries_fail PASSED [ 30%]
+tests/test_llm/test_llm_config.py::test_llm_provider_enum PASSED         [ 32%]
+tests/test_llm/test_llm_config.py::test_llm_config_defaults PASSED       [ 33%]
+tests/test_llm/test_llm_config.py::test_llm_config_enabled PASSED        [ 35%]
+tests/test_llm/test_llm_config.py::test_llm_config_pangu PASSED          [ 37%]
+tests/test_llm/test_llm_config.py::test_llm_config_serialization PASSED  [ 38%]
+tests/test_llm/test_llm_config.py::test_llm_analysis_result PASSED       [ 40%]
+tests/test_llm/test_llm_config_manager.py::test_default_config PASSED    [ 41%]
+tests/test_llm/test_llm_config_manager.py::test_no_llm_flag PASSED       [ 43%]
+tests/test_llm/test_llm_config_manager.py::test_cli_args_override PASSED [ 45%]
+tests/test_llm/test_llm_config_manager.py::test_pangu_provider_config PASSED [ 46%]
+tests/test_llm/test_llm_config_manager.py::test_env_vars PASSED          [ 48%]
+tests/test_llm/test_llm_config_manager.py::test_cli_overrides_env PASSED [ 50%]
+tests/test_llm/test_llm_config_manager.py::test_is_llm_enabled PASSED    [ 51%]
+tests/test_llm/test_llm_enhanced_analyzer.py::test_analyze_business_logic PASSED [ 53%]
+tests/test_llm/test_llm_enhanced_analyzer.py::test_evaluate_alternative_feasibility PASSED [ 54%]
+tests/test_llm/test_llm_enhanced_analyzer.py::test_suggest_alternatives PASSED [ 56%]
+tests/test_llm/test_llm_enhanced_analyzer.py::test_summarize_analysis PASSED [ 58%]
+tests/test_llm/test_llm_enhanced_analyzer.py::test_degrade_when_llm_unavailable PASSED [ 59%]
+tests/test_llm/test_llm_factory.py::test_create_openai_provider PASSED   [ 61%]
+tests/test_llm/test_llm_factory.py::test_create_pangu_provider PASSED    [ 62%]
+tests/test_llm/test_llm_factory.py::test_unknown_provider PASSED         [ 64%]
+tests/test_llm/test_llm_factory.py::test_register_custom_provider FAILED [ 66%]
+tests/test_models.py::test_enums PASSED                                  [ 67%]
+tests/test_models.py::test_skill_impl_result PASSED                      [ 69%]
+tests/test_models.py::test_api_interface PASSED                          [ 70%]
+tests/test_models.py::test_sdk_call_info PASSED                          [ 72%]
+tests/test_models.py::test_cli_command PASSED                            [ 74%]
+tests/test_models.py::test_cli_coverage_status PASSED                    [ 75%]
+tests/test_models.py::test_cli_gap PASSED                                [ 77%]
+tests/test_models.py::test_alternative_scheme PASSED                     [ 79%]
+tests/test_models.py::test_analysis_config PASSED                        [ 80%]
+tests/test_models.py::test_sdk_analysis_result PASSED                    [ 82%]
+tests/test_models.py::test_skill_analysis_result PASSED                  [ 83%]
+tests/test_models.py::test_checkpoint_info PASSED                        [ 85%]
+tests/test_resources.py::test_list_skill_names PASSED                    [ 87%]
+tests/test_resources.py::test_read_skill_files PASSED                    [ 88%]
+tests/test_resources.py::test_read_skill_config_from_readme PASSED       [ 90%]
+tests/test_resources.py::test_nonexistent_repo PASSED                    [ 91%]
+tests/test_routes.py::test_route_koocli PASSED                           [ 93%]
+tests/test_routes.py::test_route_koocli_string PASSED                    [ 95%]
+tests/test_routes.py::test_route_sdk PASSED                              [ 96%]
+tests/test_routes.py::test_route_hybrid PASSED                           [ 98%]
+tests/test_routes.py::test_route_unknown PASSED                          [100%]
+
+================================== FAILURES ===================================
+________________________ test_register_custom_provider ________________________
+tests\test_llm\test_llm_factory.py:58: in test_register_custom_provider
+    provider = factory.create_provider(config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\llm\llm_factory.py:36: in create_provider
+    return provider_cls(
+E   TypeError: MockProvider() takes no arguments
+=========================== short test summary info ===========================
+FAILED tests/test_llm/test_llm_factory.py::test_register_custom_provider - Ty...
+======================== 1 failed, 61 passed in 3.35s =========================
