@@ -62,31 +62,31 @@ hcloud obs <command> [parameters...] [options...]
 
 ### 对象相关操作
 
-| OBS Open API接口 | HTTP方法 | KooCLI命令 | 功能说明 |
-|-------------------|----------|------------|----------|
-| PutObject | PUT | `hcloud obs cp file_url obs://bucket/key` | 上传对象 |
-| GetObject | GET | `hcloud obs cp obs://bucket/key file_url` | 下载对象 |
-| DeleteObject | DELETE | `hcloud obs rm obs://bucket/key` | 删除对象 |
-| ListObjects | GET | `hcloud obs ls obs://bucket` | 列举对象 |
-| HeadObject | HEAD | `hcloud obs stat obs://bucket/key` | 查询对象属性 |
-| GetObjectMetadata | GET | `hcloud obs stat obs://bucket/key` | 查询对象元数据 |
-| SetObjectMetadata | PUT | `hcloud obs chattri obs://bucket/key` | 设置对象元数据 |
-| CopyObject | PUT | `hcloud obs cp obs://src/key obs://dst/key` | 复制对象 |
-| MoveObject | - | `hcloud obs mv obs://src/key obs://dst/key` | 移动对象 |
-| GetObjectAcl | GET | `hcloud obs stat obs://bucket/key -acl` | 查询对象ACL |
-| SetObjectAcl | PUT | `hcloud obs chattri obs://bucket/key -acl=xxx` | 设置对象ACL |
-| DeleteObjectAcl | DELETE | `hcloud obs chattri obs://bucket/key` | 删除对象ACL |
-| InitiateMultipartUpload | POST | `hcloud obs cp file_url obs://bucket/key` | 初始化分段上传 |
-| UploadPart | PUT | `hcloud obs cp file_url obs://bucket/key` | 上传分段 |
-| CompleteMultipartUpload | POST | `hcloud obs cp file_url obs://bucket/key` | 完成分段上传 |
-| AbortMultipartUpload | DELETE | `hcloud obs abort obs://bucket/key -u=xxx` | 取消分段上传 |
-| ListParts | GET | `hcloud obs ls obs://bucket -m` | 列举已上传分段 |
-| RestoreObject | POST | `hcloud obs restore obs://bucket/key` | 恢复归档对象 |
-| GetObjectVersioning | GET | `hcloud obs ls obs://bucket -v` | 列举多版本对象 |
-| DeleteObjectVersion | DELETE | `hcloud obs rm obs://bucket/key -versionId=xxx` | 删除指定版本对象 |
-| SetObjectTagging | PUT | `hcloud obs chattri obs://bucket/key` | 设置对象标签 |
-| GetObjectTagging | GET | `hcloud obs stat obs://bucket/key` | 查询对象标签 |
-| DeleteObjectTagging | DELETE | `hcloud obs chattri obs://bucket/key` | 删除对象标签 |
+| OBS Open API接口　　　　| HTTP方法 | KooCLI命令　　　　　　　　　　　　　　　　　　　| 功能说明　　　　 |
+| -------------------------| ----------| -------------------------------------------------| ------------------|
+| PutObject　　　　　　　 | PUT　　　| `hcloud obs cp file_url obs://bucket/key`　　　 | 上传对象　　　　 |
+| GetObject　　　　　　　 | GET　　　| `hcloud obs cp obs://bucket/key file_url`　　　 | 下载对象　　　　 |
+| DeleteObject　　　　　　| DELETE　 | `hcloud obs rm obs://bucket/key`　　　　　　　　| 删除对象　　　　 |
+| ListObjects　　　　　　 | GET　　　| `hcloud obs ls obs://bucket`　　　　　　　　　　| 列举对象　　　　 |
+| HeadObject　　　　　　　| HEAD　　 | `hcloud obs stat obs://bucket/key`　　　　　　　| 查询对象属性　　 |
+| GetObjectMetadata　　　 | GET　　　| `hcloud obs stat obs://bucket/key`　　　　　　　| 查询对象元数据　 |
+| SetObjectMetadata　　　 | PUT　　　| `hcloud obs chattri obs://bucket/key`　　　　　 | 设置对象元数据　 |
+| CopyObject　　　　　　　| PUT　　　| `hcloud obs cp obs://src/key obs://dst/key`　　 | 复制对象　　　　 |
+| MoveObject　　　　　　　| -　　　　| `hcloud obs mv obs://src/key obs://dst/key`　　 | 移动对象　　　　 |
+| GetObjectAcl　　　　　　| GET　　　| `hcloud obs stat obs://bucket/key -acl`　　　　 | 查询对象ACL　　　|
+| SetObjectAcl　　　　　　| PUT　　　| `hcloud obs chattri obs://bucket/key -acl=xxx`　| 设置对象ACL　　　|
+| DeleteObjectAcl　　　　 | DELETE　 | `hcloud obs chattri obs://bucket/key`　　　　　 | 删除对象ACL　　　|
+| InitiateMultipartUpload | POST　　 | `hcloud obs cp file_url obs://bucket/key`　　　 | 初始化分段上传　 |
+| UploadPart　　　　　　　| PUT　　　| `hcloud obs cp file_url obs://bucket/key`　　　 | 上传分段　　　　 |
+| CompleteMultipartUpload | POST　　 | `hcloud obs cp file_url obs://bucket/key`　　　 | 完成分段上传　　 |
+| AbortMultipartUpload　　| DELETE　 | `hcloud obs abort obs://bucket/key -u=xxx`　　　| 取消分段上传　　 |
+| ListParts　　　　　　　 | GET　　　| `hcloud obs ls obs://bucket -m`　　　　　　　　 | 列举已上传分段　 |
+| RestoreObject　　　　　 | POST　　 | `hcloud obs restore obs://bucket/key`　　　　　 | 恢复归档对象　　 |
+| GetObjectVersioning　　 | GET　　　| `hcloud obs ls obs://bucket -v`　　　　　　　　 | 列举多版本对象　 |
+| DeleteObjectVersion　　 | DELETE　 | `hcloud obs rm obs://bucket/key -versionId=xxx` | 删除指定版本对象 |
+| SetObjectTagging　　　　| PUT　　　| `hcloud obs chattri obs://bucket/key`　　　　　 | 设置对象标签　　 |
+| GetObjectTagging　　　　| GET　　　| `hcloud obs stat obs://bucket/key`　　　　　　　| 查询对象标签　　 |
+| DeleteObjectTagging　　 | DELETE　 | `hcloud obs chattri obs://bucket/key`　　　　　 | 删除对象标签　　 |
 
 ### 辅助命令
 

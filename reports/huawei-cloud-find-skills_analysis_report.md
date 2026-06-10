@@ -8,25 +8,23 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Invoke this skill to search, discover, browse, find and install any Huawei Cloud (华为云) agent skill.Triggers include: "华为云","华为云有什么skill","华为云相关skill","华为云agent skill 市场","华为云skill类目","explore Huawei Cloud skills","show Huawei Cloud skill categories","does a Huawei Cloud skill exist for...","which... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T09:03:08.955190+00:00 |
+| 分析时间 | 2026-06-10T14:40:14.162937+00:00 |
 
 ## Skill依赖工具
 
 | 依赖项 | 版本/说明 | 功能描述 | 是否必须 |
 | --- | --- | --- | --- |
-
 | Python | 3.14 | Skill实现语言及运行时环境 | 必须 |
-
 | Tool: jq | 已确认 | JSON命令行处理工具，用于解析和过滤API返回的JSON数据 | 可选 |
-
 
 ## 第一阶段：目标Skill使用的华为云Open API接口
 
 ### 阶段结论
 
 
-未识别到可映射的Open API接口。
 
+
+未识别到可映射的Open API接口。
 
 ## 第二阶段：KooCLI命令一一对应关系与效果完全一致判定
 
@@ -39,9 +37,7 @@
 
 
 
-
 ## 第三阶段：全部改用KooCLI后的业务效果等价性结论
-
 
 | 项目 | 内容 |
 | --- | --- |
@@ -52,8 +48,6 @@
 
 
 无关键阻塞点。
-
-
 
 ## 第四阶段：KooCLI本地验证结论
 

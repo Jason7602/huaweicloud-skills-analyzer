@@ -8,47 +8,33 @@
 | 实现方式 | SDK |
 | 业务目标 | >- |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T09:03:29.587046+00:00 |
+| 分析时间 | 2026-06-10T14:40:41.653243+00:00 |
 
 ## Skill依赖工具
 
 | 依赖项 | 版本/说明 | 功能描述 | 是否必须 |
 | --- | --- | --- | --- |
-
 | Python | 3.8 | Skill实现语言及运行时环境 | 必须 |
-
 | SDK: huaweicloudsdkbss | 已确认 | 运营能力(BSS)服务SDK | 必须 |
-
 | SDK: huaweicloudsdkcore | 已确认 | 华为云SDK核心库，提供认证、HTTP请求等基础能力 | 必须 |
-
 | -e | 未明确版本 | 第三方库: -e | 必须 |
-
 | config | 已确认 | 第三方库: config | 必须 |
-
 | gzip | 已确认 | 第三方库: gzip | 必须 |
-
 | random | 已确认 | 第三方库: random | 必须 |
-
 | requests | 未明确版本 | HTTP请求库，用于调用REST API | 必须 |
-
 | urllib3 | 已确认 | 第三方库: urllib3 | 必须 |
-
 | uuid | 已确认 | 第三方库: uuid | 必须 |
-
 
 ## 第一阶段：目标Skill使用的华为云Open API接口
 
 ### 阶段结论
 
 共识别2个Open API接口。
+
 | 序号 | 服务 | Open API接口 | HTTP方法 | API路径 | 来源SDK调用 | 实际使用参数 | 业务作用 | 是否必须 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-
 | 1 | Bss | RenewalResources | POST | /v2/orders/subscriptions/resources/renew | BssClient.renewal_resources (scripts\flexus_lifecycle.py:537) | - | 通过Bss服务执行RenewalResources操作，作用对象为renew | mandatory |
-
 | 2 | Bss | CancelResourcesSubscription | POST | /v2/orders/subscriptions/resources/unsubscribe | BssClient.cancel_resources_subscription (scripts\flexus_lifecycle.py:596) | - | 通过Bss服务执行CancelResourcesSubscription操作，作用对象为unsubscribe | mandatory |
-
-
 
 ## 第二阶段：KooCLI命令一一对应关系与效果完全一致判定
 
@@ -56,20 +42,14 @@
 
 共分析2个Open API接口，其中2个存在效果完全一致的KooCLI命令。
 
-
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-
-| 1 | RenewalResources | hcloud BSS RenewalResources | 效果完全一致 | - | 可接受 | local_cli |
-
-| 2 | CancelResourcesSubscription | hcloud BSS CancelResourcesSubscription | 效果完全一致 | - | 可接受 | local_cli |
-
-
+| 1 | RenewalResources | hcloud Bss RenewalResources | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | CancelResourcesSubscription | hcloud Bss CancelResourcesSubscription | 效果完全一致 | - | 可接受 | local_cli |
 
 
 
 ## 第三阶段：全部改用KooCLI后的业务效果等价性结论
-
 
 | 项目 | 内容 |
 | --- | --- |
@@ -80,8 +60,6 @@
 
 
 无关键阻塞点。
-
-
 
 ## 第四阶段：KooCLI本地验证结论
 

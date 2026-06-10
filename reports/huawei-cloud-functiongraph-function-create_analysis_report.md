@@ -8,31 +8,25 @@
 | 实现方式 | SDK |
 | 业务目标 | Create FunctionGraph functions on Huawei Cloud. Use this skill when users ask to create, deploy, or upload cloud functions, serverless functions, or FunctionGraph functions. Triggered by keywords like "create function", "deploy function", "upload function", "create cloud function", "创建函数", "部署函数"... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T09:03:38.414215+00:00 |
+| 分析时间 | 2026-06-10T14:40:52.931626+00:00 |
 
 ## Skill依赖工具
 
 | 依赖项 | 版本/说明 | 功能描述 | 是否必须 |
 | --- | --- | --- | --- |
-
 | Python | 3.9 | Skill实现语言及运行时环境 | 必须 |
-
 | SDK: huaweicloudsdkcore | 已确认 | 华为云SDK核心库，提供认证、HTTP请求等基础能力 | 必须 |
-
 | SDK: huaweicloudsdkfunctiongraph | 已确认 | 函数工作流(FunctionGraph)服务SDK | 必须 |
-
 
 ## 第一阶段：目标Skill使用的华为云Open API接口
 
 ### 阶段结论
 
 共识别1个Open API接口。
+
 | 序号 | 服务 | Open API接口 | HTTP方法 | API路径 | 来源SDK调用 | 实际使用参数 | 业务作用 | 是否必须 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-
 | 1 | FunctionGraph | CreateFunction | POST | /v2/{project_id}/fgs/functions | FunctionGraphClient.create_function (scripts\create_function.py:110) | - | 通过FunctionGraph服务执行create操作，作用对象为functions | mandatory |
-
-
 
 ## 第二阶段：KooCLI命令一一对应关系与效果完全一致判定
 
@@ -40,18 +34,13 @@
 
 共分析1个Open API接口，其中1个存在效果完全一致的KooCLI命令。
 
-
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-
-| 1 | CreateFunction | hcloud FUNCTIONGRAPH CreateFunction | 效果完全一致 | - | 可接受 | local_cli |
-
-
+| 1 | CreateFunction | hcloud FunctionGraph CreateFunction | 效果完全一致 | - | 可接受 | local_cli |
 
 
 
 ## 第三阶段：全部改用KooCLI后的业务效果等价性结论
-
 
 | 项目 | 内容 |
 | --- | --- |
@@ -62,8 +51,6 @@
 
 
 无关键阻塞点。
-
-
 
 ## 第四阶段：KooCLI本地验证结论
 
