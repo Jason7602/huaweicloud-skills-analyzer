@@ -194,6 +194,9 @@ class SdkInterfaceAnalyzer:
 
         for node in ast.walk(tree):
             if isinstance(node, ast.FunctionDef):
+                ret_cls = self._resolve_return_annotation(node.returns, client_classes)
+                if ret_cls:
+                    func_returns[node.name] = ret_cls
                 for child in ast.walk(node):
                     if isinstance(child, ast.Assign):
                         for target in child.targets:
@@ -213,13 +216,28 @@ class SdkInterfaceAnalyzer:
                         if cls:
                             func_returns[node.name] = cls
 
+    def _resolve_return_annotation(self, returns: Optional[ast.expr], client_classes: dict) -> Optional[str]:
+        if isinstance(returns, ast.Name):
+            if returns.id in client_classes:
+                return client_classes[returns.id]
+            if returns.id.endswith("Client"):
+                return returns.id
+        if isinstance(returns, ast.Attribute):
+            if returns.attr in client_classes:
+                return client_classes[returns.attr]
+            if returns.attr.endswith("Client"):
+                return returns.attr
+        return None
+
     @staticmethod
     def _assign_target_key(target: ast.expr) -> Optional[str]:
         if isinstance(target, ast.Name):
             return target.id
         if isinstance(target, ast.Attribute):
-            if isinstance(target.value, ast.Name) and target.value.id == "self":
-                return f"self.{target.attr}"
+            if isinstance(target.value, ast.Name):
+                if target.value.id == "self":
+                    return f"self.{target.attr}"
+                return f"{target.value.id}.{target.attr}"
         return None
 
     def _resolve_assign_to_client(self, value: ast.expr, client_classes: dict, func_returns: dict) -> Optional[str]:
@@ -281,6 +299,8 @@ class SdkInterfaceAnalyzer:
             return ""
         if svc.endswith("_client"):
             svc = svc[:-len("_client")]
+        if not svc or svc == "client":
+            return ""
         return f"{svc.capitalize()}Client"
 
     def _trace_builder_class(self, node: ast.expr) -> Optional[str]:
@@ -314,7 +334,9 @@ class SdkInterfaceAnalyzer:
             if isinstance(node, ast.FunctionDef):
                 local_vt: Dict[str, str] = {}
                 local_sv: Dict[str, str] = {}
+                self._collect_string_context(node, local_sv)
                 for child in ast.walk(node):
+                    setattr(child, '_parent_func', node.name)
                     if isinstance(child, ast.Assign):
                         for target in child.targets:
                             key = self._assign_target_key(target)
@@ -323,12 +345,6 @@ class SdkInterfaceAnalyzer:
                             cls = self._resolve_assign_to_client(child.value, client_classes, func_returns)
                             if cls:
                                 local_vt[key] = cls
-                            str_val = self._extract_string_value(child.value)
-                            if str_val:
-                                local_sv[f"__str__{key}"] = str_val
-                            svc = self._extract_service_from_host(child.value)
-                            if svc:
-                                local_sv[f"__svc__{key}"] = svc
 
                 combined_vt = dict(var_types)
                 combined_vt.update(local_vt)
@@ -372,6 +388,7 @@ class SdkInterfaceAnalyzer:
         module_vt = dict(var_types)
         module_sv = dict(local_str_vars)
 
+        self._collect_string_context(tree, module_sv, exclude_func=True)
         for node in ast.walk(tree):
             if isinstance(node, ast.Assign) and not _in_function(node):
                 for target in node.targets:
@@ -381,12 +398,6 @@ class SdkInterfaceAnalyzer:
                     cls = self._resolve_assign_to_client(node.value, client_classes, func_returns)
                     if cls:
                         module_vt[key] = cls
-                    str_val = self._extract_string_value(node.value)
-                    if str_val:
-                        module_sv[f"__str__{key}"] = str_val
-                    svc = self._extract_service_from_host(node.value)
-                    if svc:
-                        module_sv[f"__svc__{key}"] = svc
 
         for node in ast.walk(tree):
             if isinstance(node, ast.Call) and not _in_function(node):
@@ -416,6 +427,8 @@ class SdkInterfaceAnalyzer:
             return None
 
         method_name = node.func.attr
+        if method_name == "new_builder" or method_name == "build" or method_name.startswith("with_"):
+            return None
         receiver = node.func.value
 
         if isinstance(receiver, ast.Name):
@@ -439,7 +452,7 @@ class SdkInterfaceAnalyzer:
             if method_name in ("post", "get", "delete", "put", "patch", "request"):
                 effective_method = method_name
                 if method_name == "request" and node.args:
-                    method_val = self._extract_string_value(node.args[0])
+                    method_val = self._resolve_string_expr(node.args[0], local_str_vars)
                     if method_val and method_val.upper() in ("POST", "GET", "DELETE", "PUT", "PATCH"):
                         effective_method = method_val.lower()
                     else:
@@ -457,29 +470,29 @@ class SdkInterfaceAnalyzer:
         for kw in node.keywords:
             if kw.arg == "host":
                 service_name = self._extract_service_from_host(kw.value)
-                if not service_name and isinstance(kw.value, ast.Name):
-                    service_name = local_str_vars.get(f"__svc__{kw.value.id}")
+                if not service_name:
+                    host_value = self._resolve_string_expr(kw.value, local_str_vars)
+                    if host_value:
+                        service_name = self._parse_host_to_service(host_value) or self._parse_url_to_service(host_value)
             if kw.arg == "resource_path":
-                resource_path = self._extract_string_value(kw.value) or ""
-                if not resource_path and isinstance(kw.value, ast.Name):
-                    resource_path = local_str_vars.get(f"__str__{kw.value.id}", "")
+                resource_path = self._resolve_string_expr(kw.value, local_str_vars) or ""
             if kw.arg == "method":
                 mv = self._extract_string_value(kw.value)
                 if mv:
                     http_method = mv.upper()
 
         if node.args and len(node.args) >= 2:
-            method_val = self._extract_string_value(node.args[0])
+            method_val = self._resolve_string_expr(node.args[0], local_str_vars)
             if method_val and method_val.upper() in ("POST", "GET", "DELETE", "PUT", "PATCH"):
                 http_method = method_val.upper()
             if not service_name:
                 service_name = self._extract_service_from_host(node.args[1])
-                if not service_name and isinstance(node.args[1], ast.Name):
-                    service_name = local_str_vars.get(f"__svc__{node.args[1].id}")
+                if not service_name:
+                    host_value = self._resolve_string_expr(node.args[1], local_str_vars)
+                    if host_value:
+                        service_name = self._parse_host_to_service(host_value) or self._parse_url_to_service(host_value)
             if not resource_path and len(node.args) >= 3:
-                resource_path = self._extract_string_value(node.args[2]) or ""
-                if not resource_path and isinstance(node.args[2], ast.Name):
-                    resource_path = local_str_vars.get(f"__str__{node.args[2].id}", "")
+                resource_path = self._resolve_string_expr(node.args[2], local_str_vars) or ""
 
         if not service_name and resource_path:
             service_name = self._infer_service_from_resource_path(resource_path)
@@ -489,6 +502,58 @@ class SdkInterfaceAnalyzer:
 
         api_name, method_name = self._infer_api_from_context(node, http_method.lower(), resource_path)
         return (service_name, "SignerBypass", method_name, {"resource_path": resource_path, "http_method": http_method})
+
+    def _collect_string_context(self, root: ast.AST, context: dict, exclude_func: bool = False):
+        for node in ast.walk(root):
+            if exclude_func and isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                continue
+            if not isinstance(node, ast.Assign):
+                continue
+            for target in node.targets:
+                key = self._assign_target_key(target)
+                if not key:
+                    continue
+                value = self._resolve_string_expr(node.value, context)
+                if value:
+                    context[f"__str__{key}"] = value
+                    svc = self._parse_url_to_service(value) or self._parse_host_to_service(value)
+                    if svc:
+                        context[f"__svc__{key}"] = svc
+                if isinstance(node.value, ast.Call) and self._is_urlparse_call(node.value):
+                    source = self._resolve_string_expr(node.value.args[0], context) if node.value.args else None
+                    if source:
+                        context[f"__urlparse__{key}"] = source
+
+    def _resolve_string_expr(self, node: ast.expr, context: dict) -> Optional[str]:
+        direct = self._extract_string_value(node)
+        if direct:
+            return direct
+        if isinstance(node, ast.Name):
+            return context.get(f"__str__{node.id}")
+        if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
+            left = self._resolve_string_expr(node.left, context)
+            right = self._resolve_string_expr(node.right, context)
+            if left is not None and right is not None:
+                return left + right
+            if left is not None:
+                return left
+        if isinstance(node, ast.Attribute):
+            if isinstance(node.value, ast.Name):
+                source = context.get(f"__urlparse__{node.value.id}")
+                if source:
+                    if node.attr == "path":
+                        return self._parse_url_to_path(source)
+                    if node.attr == "hostname":
+                        return self._parse_url_to_host(source)
+        return None
+
+    @staticmethod
+    def _is_urlparse_call(node: ast.Call) -> bool:
+        if isinstance(node.func, ast.Name) and node.func.id == "urlparse":
+            return True
+        if isinstance(node.func, ast.Attribute) and node.func.attr == "urlparse":
+            return True
+        return False
 
     def _resolve_var_to_client(self, var_name: str, client_classes: dict, var_types: dict, func_returns: dict) -> Optional[str]:
         if var_name in var_types:
@@ -501,7 +566,7 @@ class SdkInterfaceAnalyzer:
         return None
 
     def _classify_requests_call(self, node: ast.Call, http_method: str, local_str_vars: dict) -> Optional[Tuple[str, str, str, dict]]:
-        url_str = self._extract_url_from_requests_call(node)
+        url_str = self._extract_url_from_requests_call(node, http_method, local_str_vars)
         service_name = None
         resource_path = ""
 
@@ -510,14 +575,18 @@ class SdkInterfaceAnalyzer:
             resource_path = self._parse_url_to_path(url_str)
 
         if not service_name:
-            host_svc = local_str_vars.get("__svc__host")
+            host_svc = local_str_vars.get("__svc__host") or local_str_vars.get("__svc__request.host")
             if host_svc:
                 service_name = host_svc
 
         if not resource_path:
-            rp = local_str_vars.get("__str__resource_path")
+            rp = local_str_vars.get("__str__resource_path") or local_str_vars.get("__str__request.resource_path")
             if rp:
                 resource_path = rp
+
+        method_from_sdk_req = local_str_vars.get("__str__request.method")
+        if method_from_sdk_req and http_method.lower() == "get":
+            http_method = method_from_sdk_req.lower()
 
         if not service_name:
             service_name, resource_path = self._find_api_info_from_call_context(node, local_str_vars)
@@ -529,16 +598,15 @@ class SdkInterfaceAnalyzer:
 
         return (service_name, "SignerBypass", method_name, {"resource_path": resource_path, "http_method": http_method.upper()})
 
-    def _extract_url_from_requests_call(self, node: ast.Call) -> Optional[str]:
-        if node.args:
-            val = self._extract_string_value(node.args[0])
-            if val:
-                return val
-            if isinstance(node.args[0], ast.Name):
-                return None
+    def _extract_url_from_requests_call(self, node: ast.Call, http_method: str, local_str_vars: dict) -> Optional[str]:
+        if isinstance(node.func, ast.Attribute) and node.func.attr == "request":
+            if len(node.args) >= 2:
+                return self._resolve_string_expr(node.args[1], local_str_vars)
+        elif node.args:
+            return self._resolve_string_expr(node.args[0], local_str_vars)
         for kw in node.keywords:
             if kw.arg == "url":
-                val = self._extract_string_value(kw.value)
+                val = self._resolve_string_expr(kw.value, local_str_vars)
                 if val:
                     return val
         return None
@@ -550,22 +618,22 @@ class SdkInterfaceAnalyzer:
         for kw in node.keywords:
             if kw.arg == "host":
                 service_name = self._extract_service_from_host(kw.value)
-                if not service_name and isinstance(kw.value, ast.Name):
-                    service_name = local_str_vars.get(f"__svc__{kw.value.id}")
+                if not service_name:
+                    host_value = self._resolve_string_expr(kw.value, local_str_vars)
+                    if host_value:
+                        service_name = self._parse_host_to_service(host_value) or self._parse_url_to_service(host_value)
             if kw.arg == "resource_path":
-                resource_path = self._extract_string_value(kw.value) or ""
-                if not resource_path and isinstance(kw.value, ast.Name):
-                    resource_path = local_str_vars.get(f"__str__{kw.value.id}", "")
+                resource_path = self._resolve_string_expr(kw.value, local_str_vars) or ""
 
         if node.args and len(node.args) >= 2:
             if not service_name:
                 service_name = self._extract_service_from_host(node.args[1])
-                if not service_name and isinstance(node.args[1], ast.Name):
-                    service_name = local_str_vars.get(f"__svc__{node.args[1].id}")
+                if not service_name:
+                    host_value = self._resolve_string_expr(node.args[1], local_str_vars)
+                    if host_value:
+                        service_name = self._parse_host_to_service(host_value) or self._parse_url_to_service(host_value)
             if not resource_path and len(node.args) >= 3:
-                resource_path = self._extract_string_value(node.args[2]) or ""
-                if not resource_path and isinstance(node.args[2], ast.Name):
-                    resource_path = local_str_vars.get(f"__str__{node.args[2].id}", "")
+                resource_path = self._resolve_string_expr(node.args[2], local_str_vars) or ""
 
         if not service_name and resource_path:
             service_name = self._infer_service_from_resource_path(resource_path)
@@ -573,20 +641,47 @@ class SdkInterfaceAnalyzer:
         return service_name, resource_path
 
     def _infer_api_from_context(self, node: ast.Call, http_method: str, resource_path: str) -> Tuple[str, str]:
+        path_api = self._infer_api_from_path(http_method, resource_path)
+        if path_api:
+            return path_api
+
         func_name = self._find_enclosing_function_name(node)
         if func_name:
             api_name = self._func_name_to_api_name(func_name, http_method)
             method_name = self._api_name_to_method(api_name, http_method)
             return api_name, method_name
 
-        if resource_path:
-            parts = [p for p in resource_path.split("/") if p and not p.startswith("{")]
-            if parts:
-                last = parts[-1]
-                api_name = f"{http_method.capitalize()}{last.capitalize()}"
-                return api_name, f"{http_method.lower()}_{last}"
-
         return "UnknownApi", f"{http_method.lower()}_unknown"
+
+    def _infer_api_from_path(self, http_method: str, resource_path: str) -> Optional[Tuple[str, str]]:
+        if not resource_path:
+            return None
+        normalized = resource_path.split("?", 1)[0]
+        special = {
+            ("GET", "/v3/projects"): ("KeystoneListProjects", "keystone_list_projects"),
+            ("POST", "/v1/light-instances"): ("CreateLightInstances", "create_light_instances"),
+            ("GET", "/v1/resources"): ("ListResources", "list_resources"),
+        }
+        key = (http_method.upper(), normalized)
+        if key in special:
+            return special[key]
+        parts = [p for p in normalized.split("/") if p and not p.startswith("{") and not re.fullmatch(r"v\d+", p)]
+        if not parts:
+            return None
+        resource = parts[-1].replace("-", "_")
+        singular = resource[:-1] if resource.endswith("s") else resource
+        pascal = "".join(p.capitalize() for p in resource.split("_"))
+        if http_method.upper() == "GET":
+            action = "Show" if normalized.rstrip("/").endswith("}") else "List"
+        elif http_method.upper() == "POST":
+            action = "Create"
+        elif http_method.upper() == "DELETE":
+            action = "Delete"
+        else:
+            action = "Update"
+        api_name = f"{action}{pascal}"
+        method_name = f"{action.lower()}_{resource}"
+        return api_name, method_name
 
     @staticmethod
     def _find_enclosing_function_name(node: ast.AST) -> Optional[str]:
@@ -634,14 +729,21 @@ class SdkInterfaceAnalyzer:
 
     @staticmethod
     def _parse_url_to_service(url_str: str) -> Optional[str]:
-        match = re.search(r"([a-z][a-z0-9]*)\.[a-z]+[0-9]*\.myhuaweicloud\.com", url_str)
+        match = re.search(r"([a-z][a-z0-9]*)\.[a-z]+[0-9]*\.myhuaweicloud\.(?:com|eu)", url_str)
         if match:
             return match.group(1)
         return None
 
     @staticmethod
     def _parse_url_to_path(url_str: str) -> str:
-        match = re.search(r"myhuaweicloud\.com(/.*)", url_str)
+        match = re.search(r"myhuaweicloud\.(?:com|eu)(/[^?]*)", url_str)
+        if match:
+            return match.group(1)
+        return ""
+
+    @staticmethod
+    def _parse_url_to_host(url_str: str) -> str:
+        match = re.search(r"https?://([^/]+)", url_str)
         if match:
             return match.group(1)
         return ""
@@ -730,10 +832,11 @@ class SdkInterfaceAnalyzer:
         if not call.service_name:
             return None
 
+        if call.client_class == "SignerBypass":
+            return self._map_signer_bypass_to_api(call)
+
         service_lower = call.service_name.lower()
         if service_lower not in service_index:
-            if call.client_class == "SignerBypass":
-                return self._map_signer_bypass_to_api(call)
             self.log.info(f"Service not found in SDK source: {call.service_name}")
             return None
 

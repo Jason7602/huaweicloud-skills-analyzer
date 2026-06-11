@@ -159,9 +159,9 @@ class CliCorrespondenceAnalyzer:
         api_base = self._strip_version(usage.api_name)
         scored = []
         for cmd in commands:
-            score = 0
-            if self._norm(cmd.service_name) == service:
-                score += 3
+            if self._norm(cmd.service_name) != service:
+                continue
+            score = 3
             cmd_base = self._strip_version(cmd.operation_name)
             if self._action(cmd_base) == action and action:
                 score += 3
@@ -169,7 +169,7 @@ class CliCorrespondenceAnalyzer:
                 score += 2
             if resource and resource in self._norm(cmd.resource_object + cmd_base):
                 score += 2
-            if score > 0:
+            if score > 3:
                 scored.append((score, cmd))
         scored.sort(key=lambda x: x[0], reverse=True)
         return [cmd for _, cmd in scored[:3]]
