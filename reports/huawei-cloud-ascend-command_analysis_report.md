@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Huawei Ascend NPU natural language management skill, supporting both local direct connection and SSH remote modes. Provides comprehensive npu-smi command capabilities including device queries, configuration management, firmware upgrade, vNPU virtualization, certificate management, and compute pow... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:06.421209+00:00 |
+| 分析时间 | 2026-06-11T08:49:40.842806+00:00 |
 
 ## Skill依赖工具
 

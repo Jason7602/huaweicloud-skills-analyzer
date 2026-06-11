@@ -8,7 +8,7 @@
 | 实现方式 | KooCLI |
 | 业务目标 | Automate batch creation and management of Huawei Cloud CES alarm rules for ECS instances using hcloud CLI v7.2.2+. Use this skill to: (1) batch create alarms with templates (web/database), (2) update SMN notifications, (3) query ECS metrics and alarm lists. Trigger: "ECS alert", "create alert", "... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:44:28.665017+00:00 |
+| 分析时间 | 2026-06-11T08:48:56.855185+00:00 |
 
 ## Skill依赖工具
 

@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | "Deploy YOLO training platform on Huawei Cloud with GPU ECS via Terraform. Use when building or managing a YOLO GPU training environment. Trigger: deploy YOLO, YOLO training, GPU training, 部署YOLO, YOLO训练, GPU训练, 视觉模型训练" |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:43:01.814958+00:00 |
+| 分析时间 | 2026-06-11T08:48:22.551436+00:00 |
 
 ## Skill依赖工具
 

@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud billing and pricing. Covers balances, bills, coupons, cash coupons, stored-value cards, orders, refunds, costs, free resources, resource usage, enterprise accounts, and on-demand/period/ELB/NAT/DCS pricing. No write operations. Use this skill when the user needs to check fees... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:01.459944+00:00 |
+| 分析时间 | 2026-06-11T08:49:38.462108+00:00 |
 
 ## Skill依赖工具
 
@@ -91,45 +91,45 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | KeystoneListProjects | hcloud Iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
 | 2 | ListBaremetalFlavorDetailExtends | hcloud Bms ListBaremetalFlavorDetailExtends | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | ListNatGatewaySpecs | hcloud NAT ListNatGatewaySpecs | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | ListSpecs | hcloud NAT ListSpecs | 效果完全一致 | - | 可接受 | local_cli |
-| 5 | ListCities | hcloud Bss ListCities | 效果完全一致 | - | 可接受 | local_cli |
-| 6 | ListConversions | hcloud Bss ListConversions | 效果完全一致 | - | 可接受 | local_cli |
-| 7 | ListCosts | hcloud Bss ListCosts | 效果完全一致 | - | 可接受 | local_cli |
-| 8 | ListCounties | hcloud Bss ListCounties | 效果完全一致 | - | 可接受 | local_cli |
-| 9 | ListCustomerselfResourceRecords | hcloud Bss ListCustomerselfResourceRecords | 效果完全一致 | - | 可接受 | local_cli |
-| 10 | ListCustomerselfResourceRecordDetails | hcloud Bss ListCustomerselfResourceRecordDetails | 效果完全一致 | - | 可接受 | local_cli |
-| 11 | ListCustomerAccountChangeRecords | hcloud Bss ListCustomerAccountChangeRecords | 效果完全一致 | - | 可接受 | local_cli |
-| 12 | ListCustomerBillsFeeRecords | hcloud Bss ListCustomerBillsFeeRecords | 效果完全一致 | - | 可接受 | local_cli |
-| 13 | ListCustomerBillsMonthlyBreakDown | hcloud Bss ListCustomerBillsMonthlyBreakDown | 效果完全一致 | - | 可接受 | local_cli |
-| 14 | ListCustomerCouponChangeRecords | hcloud Bss ListCustomerAccountChangeRecords | 效果完全一致 | - | 可接受 | local_cli |
-| 15 | ListCustomerOrders | hcloud Bss ListCustomerOrders | 效果完全一致 | - | 可接受 | local_cli |
-| 16 | ListEnterpriseMultiAccount | hcloud Bss ListEnterpriseMultiAccount | 效果完全一致 | - | 可接受 | local_cli |
-| 17 | ListEnterpriseOrganizations | hcloud Bss ListEnterpriseOrganizations | 效果完全一致 | - | 可接受 | local_cli |
-| 18 | ListEnterpriseSubCustomers | hcloud Bss ListEnterpriseSubCustomers | 效果完全一致 | - | 可接受 | local_cli |
-| 19 | ListFreeResourcesUsageRecords | hcloud Bss ListFreeResourcesUsageRecords | 效果完全一致 | - | 可接受 | local_cli |
-| 20 | ListFreeResourceInfos | hcloud Bss ListFreeResourceInfos | 效果完全一致 | - | 可接受 | local_cli |
-| 21 | ListFreeResourceUsages | hcloud Bss ListFreeResourceUsages | 效果完全一致 | - | 可接受 | local_cli |
-| 22 | ListMeasureUnits | hcloud Bss ListMeasureUnits | 效果完全一致 | - | 可接受 | local_cli |
-| 23 | ListMultiAccountRetrieveCoupons | hcloud Bss ListMultiAccountRetrieveCoupons | 效果完全一致 | - | 可接受 | local_cli |
-| 24 | ListMultiAccountTransferCoupons | hcloud Bss ListMultiAccountTransferCoupons | 效果完全一致 | - | 可接受 | local_cli |
-| 25 | ListOnDemandResourceRatings | hcloud Bss ListCustomerOnDemandResources | 效果完全一致 | - | 可接受 | local_cli |
-| 26 | ListPayPerUseCustomerResources | hcloud Bss ListPayPerUseCustomerResources | 效果完全一致 | - | 可接受 | local_cli |
-| 27 | ListProvinces | hcloud Bss ListProvinces | 效果完全一致 | - | 可接受 | local_cli |
-| 28 | ListRateOnPeriodDetail | hcloud Bss ListRateOnPeriodDetail | 效果完全一致 | - | 可接受 | local_cli |
-| 29 | ListRenewRateOnPeriod | hcloud Bss ListRenewRateOnPeriod | 效果完全一致 | - | 可接受 | local_cli |
-| 30 | ListResourceTypes | hcloud Bss ListResourceTypes | 效果完全一致 | - | 可接受 | local_cli |
-| 31 | ListResourceUsage | hcloud Bss ListCustomerselfResourceRecordDetails | 效果完全一致 | - | 可接受 | local_cli |
-| 32 | ListResourceUsageSummary | hcloud Bss ListResourceUsageSummary | 效果完全一致 | - | 可接受 | local_cli |
-| 33 | ListServiceResources | hcloud Bss ListServiceResources | 效果完全一致 | - | 可接受 | local_cli |
-| 34 | ListServiceTypes | hcloud Bss ListServiceTypes | 效果完全一致 | - | 可接受 | local_cli |
-| 35 | ListStoredValueCards | hcloud Bss ListStoredValueCards | 效果完全一致 | - | 可接受 | local_cli |
-| 36 | ListUsageTypes | hcloud Bss ListUsageTypes | 效果完全一致 | - | 可接受 | local_cli |
-| 37 | ShowCustomerAccountBalances | hcloud Bss ShowCustomerAccountBalances | 效果完全一致 | - | 可接受 | local_cli |
-| 38 | ShowCustomerMonthlySum | hcloud Bss ShowCustomerMonthlySum | 效果完全一致 | - | 可接受 | local_cli |
-| 39 | ShowCustomerOrderDetails | hcloud Bss ShowCustomerOrderDetails | 效果完全一致 | - | 可接受 | local_cli |
-| 40 | ShowMultiAccountTransferAmount | hcloud Bss ShowMultiAccountTransferAmount | 效果完全一致 | - | 可接受 | local_cli |
-| 41 | ShowRefundOrderDetails | hcloud Bss ShowRefundOrderDetails | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | ListNatGatewaySpecs | hcloud Nat ListNatGatewaySpecs | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | ListSpecs | hcloud Nat ListSpecs | 效果完全一致 | - | 可接受 | local_cli |
+| 5 | ListCities | hcloud BSS ListCities | 效果完全一致 | - | 可接受 | local_cli |
+| 6 | ListConversions | hcloud BSS ListConversions | 效果完全一致 | - | 可接受 | local_cli |
+| 7 | ListCosts | hcloud BSS ListCosts | 效果完全一致 | - | 可接受 | local_cli |
+| 8 | ListCounties | hcloud BSS ListCounties | 效果完全一致 | - | 可接受 | local_cli |
+| 9 | ListCustomerselfResourceRecords | hcloud BSS ListCustomerselfResourceRecords | 效果完全一致 | - | 可接受 | local_cli |
+| 10 | ListCustomerselfResourceRecordDetails | hcloud BSS ListCustomerselfResourceRecordDetails | 效果完全一致 | - | 可接受 | local_cli |
+| 11 | ListCustomerAccountChangeRecords | hcloud BSS ListCustomerAccountChangeRecords | 效果完全一致 | - | 可接受 | local_cli |
+| 12 | ListCustomerBillsFeeRecords | hcloud BSS ListCustomerBillsFeeRecords | 效果完全一致 | - | 可接受 | local_cli |
+| 13 | ListCustomerBillsMonthlyBreakDown | hcloud BSS ListCustomerBillsMonthlyBreakDown | 效果完全一致 | - | 可接受 | local_cli |
+| 14 | ListCustomerCouponChangeRecords | hcloud BSS ListCustomerCouponChangeRecords | 效果完全一致 | - | 可接受 | local_cli |
+| 15 | ListCustomerOrders | hcloud BSS ListCustomerOrders | 效果完全一致 | - | 可接受 | local_cli |
+| 16 | ListEnterpriseMultiAccount | hcloud BSS ListEnterpriseMultiAccount | 效果完全一致 | - | 可接受 | local_cli |
+| 17 | ListEnterpriseOrganizations | hcloud BSS ListEnterpriseOrganizations | 效果完全一致 | - | 可接受 | local_cli |
+| 18 | ListEnterpriseSubCustomers | hcloud BSS ListEnterpriseSubCustomers | 效果完全一致 | - | 可接受 | local_cli |
+| 19 | ListFreeResourcesUsageRecords | hcloud BSS ListFreeResourcesUsageRecords | 效果完全一致 | - | 可接受 | local_cli |
+| 20 | ListFreeResourceInfos | hcloud BSS ListFreeResourceInfos | 效果完全一致 | - | 可接受 | local_cli |
+| 21 | ListFreeResourceUsages | hcloud BSS ListFreeResourceUsages | 效果完全一致 | - | 可接受 | local_cli |
+| 22 | ListMeasureUnits | hcloud BSS ListMeasureUnits | 效果完全一致 | - | 可接受 | local_cli |
+| 23 | ListMultiAccountRetrieveCoupons | hcloud BSS ListMultiAccountRetrieveCoupons | 效果完全一致 | - | 可接受 | local_cli |
+| 24 | ListMultiAccountTransferCoupons | hcloud BSS ListMultiAccountTransferCoupons | 效果完全一致 | - | 可接受 | local_cli |
+| 25 | ListOnDemandResourceRatings | hcloud BSS ListOnDemandResourceRatings | 效果完全一致 | - | 可接受 | local_cli |
+| 26 | ListPayPerUseCustomerResources | hcloud BSS ListPayPerUseCustomerResources | 效果完全一致 | - | 可接受 | local_cli |
+| 27 | ListProvinces | hcloud BSS ListProvinces | 效果完全一致 | - | 可接受 | local_cli |
+| 28 | ListRateOnPeriodDetail | hcloud BSS ListRateOnPeriodDetail | 效果完全一致 | - | 可接受 | local_cli |
+| 29 | ListRenewRateOnPeriod | hcloud BSS ListRenewRateOnPeriod | 效果完全一致 | - | 可接受 | local_cli |
+| 30 | ListResourceTypes | hcloud BSS ListResourceTypes | 效果完全一致 | - | 可接受 | local_cli |
+| 31 | ListResourceUsage | hcloud BSS ListResourceUsage | 效果完全一致 | - | 可接受 | local_cli |
+| 32 | ListResourceUsageSummary | hcloud BSS ListResourceUsageSummary | 效果完全一致 | - | 可接受 | local_cli |
+| 33 | ListServiceResources | hcloud BSS ListServiceResources | 效果完全一致 | - | 可接受 | local_cli |
+| 34 | ListServiceTypes | hcloud BSS ListServiceTypes | 效果完全一致 | - | 可接受 | local_cli |
+| 35 | ListStoredValueCards | hcloud BSS ListStoredValueCards | 效果完全一致 | - | 可接受 | local_cli |
+| 36 | ListUsageTypes | hcloud BSS ListUsageTypes | 效果完全一致 | - | 可接受 | local_cli |
+| 37 | ShowCustomerAccountBalances | hcloud BSS ShowCustomerAccountBalances | 效果完全一致 | - | 可接受 | local_cli |
+| 38 | ShowCustomerMonthlySum | hcloud BSS ShowCustomerMonthlySum | 效果完全一致 | - | 可接受 | local_cli |
+| 39 | ShowCustomerOrderDetails | hcloud BSS ShowCustomerOrderDetails | 效果完全一致 | - | 可接受 | local_cli |
+| 40 | ShowMultiAccountTransferAmount | hcloud BSS ShowMultiAccountTransferAmount | 效果完全一致 | - | 可接受 | local_cli |
+| 41 | ShowRefundOrderDetails | hcloud BSS ShowRefundOrderDetails | 效果完全一致 | - | 可接受 | local_cli |
 | 42 | ListFlavors | hcloud ECS ListFlavors | 效果完全一致 | - | 可接受 | local_cli |
 | 43 | ListShareTypes | hcloud SFSTURBO ListShareTypes | 效果完全一致 | - | 可接受 | local_cli |
 

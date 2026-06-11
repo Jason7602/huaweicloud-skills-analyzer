@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Deploy NewAPI LLM Gateway on Huawei Cloud via Terraform. Use when deploying a unified LLM API gateway for multi-model management, load balancing, and key rotation. Trigger: deploy NewAPI, NewAPI gateway, LLM gateway, 部署NewAPI, NewAPI网关, LLM网关 |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:43:01.519639+00:00 |
+| 分析时间 | 2026-06-11T08:48:22.432637+00:00 |
 
 ## Skill依赖工具
 

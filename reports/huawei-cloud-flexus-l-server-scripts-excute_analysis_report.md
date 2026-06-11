@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Based on Huawei Cloud COC (Cloud Operations Center) APIs for script management and remote execution. Supports creating custom scripts (Shell, Python, Bat) and batch execution on target host instances via UniAgent. Applicable to cloud operations automation and batch script deployment scenarios. Tr... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:45:22.908838+00:00 |
+| 分析时间 | 2026-06-11T08:49:23.494100+00:00 |
 
 ## Skill依赖工具
 
@@ -43,11 +43,11 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | CreateScript | hcloud COC CreateScript | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | ExecuteScript | hcloud COC ExecuteScript | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | GetScript | hcloud COC GetScript | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | ListScripts | hcloud COC ListScripts | 效果完全一致 | - | 可接受 | local_cli |
-| 5 | GetScriptJobBatch | hcloud COC GetScriptJobBatch | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | CreateScript | hcloud Coc CreateScript | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | ExecuteScript | hcloud Coc ExecuteScript | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | GetScript | hcloud Coc GetScript | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | ListScripts | hcloud Coc ListScripts | 效果完全一致 | - | 可接受 | local_cli |
+| 5 | GetScriptJobBatch | hcloud Coc GetScriptJobBatch | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

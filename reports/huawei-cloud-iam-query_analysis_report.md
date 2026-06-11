@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud identity and access management resources (IAM) via read-only Python SDK. Covers users, groups, policies, agencies, AK/SK, MFA devices, login/password/ACL policies, security compliance, and account quotas. No write operations. Use this skill when the user needs to query IAM id... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:43:27.714617+00:00 |
+| 分析时间 | 2026-06-11T08:48:31.553375+00:00 |
 
 ## Skill依赖工具
 
@@ -186,7 +186,7 @@
 | 71 | ShowProjectQuota | hcloud Iam ShowProjectQuota | 效果完全一致 | - | 可接受 | local_cli |
 | 72 | ShowUser | hcloud Iam ShowUser | 效果完全一致 | - | 可接受 | local_cli |
 | 73 | ShowUserLoginProtect | hcloud Iam ShowUserLoginProtect | 效果完全一致 | - | 可接受 | local_cli |
-| 74 | ShowUserMfaDevice | hcloud Iam ShowUser | 效果完全一致 | - | 可接受 | local_cli |
+| 74 | ShowUserMfaDevice | hcloud Iam ShowUserMfaDevice | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

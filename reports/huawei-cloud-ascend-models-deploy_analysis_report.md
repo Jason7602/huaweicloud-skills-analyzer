@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud Ascend model deployment and testing skill for large language models on Ascend DevServer (910B series). Supports single-machine and dual-machine deployment for LLM, VL (vision-language), Embedding, and Rerank models. Provides model inference testing, deployment log viewing, and status... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:06.580668+00:00 |
+| 分析时间 | 2026-06-11T08:49:40.910845+00:00 |
 
 ## Skill依赖工具
 

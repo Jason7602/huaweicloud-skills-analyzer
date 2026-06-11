@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud BSS billing (not AWS/Azure/other clouds; refuses pricing quotes, real-name review, and any non-billing scope): balance, spend, attribution, reconciliation, coupons, stored-value cards, enterprise/partner billing. One-page briefing via hcloud. Use only when the user explicitly mention... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:45:51.615406+00:00 |
+| 分析时间 | 2026-06-11T08:49:35.132844+00:00 |
 
 ## Skill依赖工具
 

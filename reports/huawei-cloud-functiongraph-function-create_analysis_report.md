@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Create FunctionGraph functions on Huawei Cloud. Use this skill when users ask to create, deploy, or upload cloud functions, serverless functions, or FunctionGraph functions. Triggered by keywords like "create function", "deploy function", "upload function", "create cloud function", "创建函数", "部署函数"... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:45:25.782660+00:00 |
+| 分析时间 | 2026-06-11T08:49:24.810885+00:00 |
 
 ## Skill依赖工具
 
@@ -36,7 +36,7 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | CreateFunction | hcloud FunctionGraph CreateFunction | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | CreateFunction | hcloud FUNCTIONGRAPH CreateFunction | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud SWR enterprise instance management skill using hcloud CLI. Use this skill when the user wants to: (1) manage SWR enterprise instances - create/list/show/delete/update configuration, (2) manage instance namespaces - create/list/show/update/delete with security scanning settings, (3) m... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:44:56.397092+00:00 |
+| 分析时间 | 2026-06-11T08:49:09.272621+00:00 |
 
 ## Skill依赖工具
 

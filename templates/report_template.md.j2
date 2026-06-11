@@ -53,8 +53,10 @@
 {% if incomplete_correspondence_apis %}
 ### 不完全一致或无对应命令接口清单
 
-{%- for api in incomplete_correspondence_apis %}
-- {{ api }}
+{%- for corr in koocli_correspondences %}
+{%- if not corr.selected_command %}
+- {{ corr.api_name }}{% if corr.api_explorer_url %}（[API Explorer查询]({{ corr.api_explorer_url }})）{% endif %}
+{%- endif %}
 {%- endfor %}
 
 {{ incomplete_explanation }}

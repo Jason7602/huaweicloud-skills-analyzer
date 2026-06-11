@@ -344,14 +344,16 @@ class SdkInterfaceAnalyzer:
                             cls = self._resolve_assign_to_client(child.value, client_classes, func_returns)
                             if cls:
                                 local_vt[key] = cls
-                            str_val = self._resolve_string_expr(child.value, local_str_vars)
+                            combined_for_resolve = dict(local_str_vars)
+                            combined_for_resolve.update(local_sv)
+                            str_val = self._resolve_string_expr(child.value, combined_for_resolve)
                             if str_val:
                                 local_sv[f"__str__{key}"] = str_val
                                 svc = self._parse_url_to_service(str_val) or self._parse_host_to_service(str_val)
                                 if svc:
                                     local_sv[f"__svc__{key}"] = svc
                             if isinstance(child.value, ast.Call) and self._is_urlparse_call(child.value):
-                                source = self._resolve_string_expr(child.value.args[0], local_str_vars) if child.value.args else None
+                                source = self._resolve_string_expr(child.value.args[0], combined_for_resolve) if child.value.args else None
                                 if source:
                                     local_sv[f"__urlparse__{key}"] = source
 
@@ -685,6 +687,13 @@ class SdkInterfaceAnalyzer:
         resource = parts[-1].replace("-", "_")
         singular = resource[:-1] if resource.endswith("s") else resource
         pascal = "".join(p.capitalize() for p in resource.split("_"))
+        known_actions = ["show", "list", "create", "delete", "update", "get", "set", "put", "batch", "check", "query", "count", "register", "unregister", "enable", "disable", "start", "stop", "restart", "reboot", "cancel", "confirm", "validate", "authorize", "revoke", "grant", "associate", "disassociate", "download", "upload", "export", "import", "reset", "renew", "release", "lock", "unlock", "freeze", "unfreeze"]
+        resource_lower = resource.lower()
+        for act in known_actions:
+            if resource_lower.startswith(act + "_") or resource_lower == act:
+                api_name = pascal
+                method_name = resource
+                return api_name, method_name
         if http_method.upper() == "GET":
             action = "Show" if normalized.rstrip("/").endswith("}") else "List"
         elif http_method.upper() == "POST":

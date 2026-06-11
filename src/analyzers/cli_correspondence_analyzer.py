@@ -48,6 +48,7 @@ class CliCorrespondenceAnalyzer:
                 acceptable=acceptable,
                 info_source=selected.info_source if selected else CliInfoSource.NONE,
                 manual_verification_items=[],
+                api_explorer_url=self._build_api_explorer_url(usage.service_name, usage.api_name) if not has_match else "",
             )
             correspondences.append(corr)
             if not has_match:
@@ -140,12 +141,11 @@ class CliCorrespondenceAnalyzer:
         return result
 
     def _to_command(self, service: str, operation: str) -> KooCliCommand:
-        action_resource = self._split_action_resource(operation)
         return KooCliCommand(
             command=f"hcloud {service} {operation}",
             service_name=service,
             operation_name=operation,
-            resource_object=action_resource[1],
+            resource_object="",
             parameters=[],
             info_source=CliInfoSource.LOCAL_CLI,
         )
@@ -154,25 +154,16 @@ class CliCorrespondenceAnalyzer:
         if self._norm(usage.service_name) == "obs":
             return self._find_obs_candidates(usage, commands)
         service = self._norm(usage.service_name)
-        action = self._action(usage.api_name)
-        resource = self._resource_from_path(usage.api_path)
         api_base = self._strip_version(usage.api_name)
-        scored = []
+        api_base_norm = self._norm(api_base)
+        exact_matches = []
         for cmd in commands:
             if self._norm(cmd.service_name) != service:
                 continue
-            score = 3
             cmd_base = self._strip_version(cmd.operation_name)
-            if self._action(cmd_base) == action and action:
-                score += 3
-            if self._norm(cmd_base) == self._norm(api_base):
-                score += 2
-            if resource and resource in self._norm(cmd.resource_object + cmd_base):
-                score += 2
-            if score > 3:
-                scored.append((score, cmd))
-        scored.sort(key=lambda x: x[0], reverse=True)
-        return [cmd for _, cmd in scored[:3]]
+            if self._norm(cmd_base) == api_base_norm:
+                exact_matches.append(cmd)
+        return exact_matches[:3]
 
     def _verify_candidates(self, candidates: List[KooCliCommand]) -> List[KooCliCommand]:
         if not candidates:
@@ -293,13 +284,6 @@ class CliCorrespondenceAnalyzer:
         return re.sub(r"/v\d+$", "", name or "")
 
     @staticmethod
-    def _split_action_resource(operation: str) -> tuple[str, str]:
-        m = re.match(r"(Create|Delete|Update|Show|List|Get|Batch|Set|Put|Check|Count|Associate|Disassociate|Grant|Revoke|Enable|Disable|Download|Upload|Copy|Move|Rename|Search|Query|Validate|Verify|Login|Logout|Register|Unregister)(.*)", operation or "", re.I)
-        if not m:
-            return "", operation
-        return m.group(1), m.group(2)
-
-    @staticmethod
     def _norm(value: str) -> str:
         return re.sub(r"[^a-z0-9]", "", (value or "").lower())
 
@@ -310,11 +294,6 @@ class CliCorrespondenceAnalyzer:
             if action in lower:
                 return action
         return ""
-
-    @staticmethod
-    def _resource_from_path(path: str) -> str:
-        parts = [p for p in (path or "").split("/") if p and not p.startswith("{") and not p.startswith("v")]
-        return re.sub(r"[^a-z0-9]", "", (parts[-1] if parts else "").lower())
 
     @staticmethod
     def _build_summary(correspondences: List[KooCliCorrespondence]) -> str:
@@ -330,3 +309,10 @@ class CliCorrespondenceAnalyzer:
 
     def _check_obs_command_by_guidance(self, operation: str) -> bool:
         return operation in self._OBS_KNOWN_COMMANDS
+
+    @staticmethod
+    def _build_api_explorer_url(service_name: str, api_name: str) -> str:
+        if not service_name or not api_name:
+            return ""
+        compute_name = service_name.upper()
+        return f"https://console.huaweicloud.com/apiexplorer/#/openapi/{compute_name}/cli?api={api_name}"

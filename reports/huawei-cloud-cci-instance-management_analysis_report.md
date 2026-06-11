@@ -8,7 +8,7 @@
 | 实现方式 | HYBRID |
 | 业务目标 | >- |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:44:56.069062+00:00 |
+| 分析时间 | 2026-06-11T08:49:09.060510+00:00 |
 
 ## Skill依赖工具
 
@@ -45,9 +45,9 @@
 
 
 ### 不完全一致或无对应命令接口清单
-- ShowNetworks
-- CreateNetworks
-- DeleteNetworks
+- ShowNetworks（[API Explorer查询](https://console.huaweicloud.com/apiexplorer/#/openapi/CCI/cli?api=ShowNetworks)）
+- CreateNetworks（[API Explorer查询](https://console.huaweicloud.com/apiexplorer/#/openapi/CCI/cli?api=CreateNetworks)）
+- DeleteNetworks（[API Explorer查询](https://console.huaweicloud.com/apiexplorer/#/openapi/CCI/cli?api=DeleteNetworks)）
 
 通过在本地实际使用KooCLI命令查询，发现ShowNetworks,CreateNetworks,DeleteNetworks确实没有与之对应的KooCLI命令。
 

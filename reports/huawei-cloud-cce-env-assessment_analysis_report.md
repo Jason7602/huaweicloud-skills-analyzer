@@ -8,7 +8,7 @@
 | 实现方式 | HYBRID |
 | 业务目标 | A skill for huawei cloud container(CCE) assessment. It automatically collects metrics and configurations from containerized application environments on Huawei Cloud to generate a comprehensive assessment report. Use this when users want to evaluate if their Huawei Cloud applications align with cl... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:43:01.067367+00:00 |
+| 分析时间 | 2026-06-11T08:48:22.297253+00:00 |
 
 ## Skill依赖工具
 

@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Huawei Cloud EIP (Elastic IP) cost optimization skill using Python SDK v2. Use this skill when the user wants to: (1) list and query EIPs across regions with detailed status, (2) identify idle/unbound EIPs and generate cost optimization reports, (3) set up idle EIP monitoring with webhook/email a... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:43:31.151317+00:00 |
+| 分析时间 | 2026-06-11T08:48:33.325263+00:00 |
 
 ## Skill依赖工具
 
@@ -39,8 +39,8 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | ListPublicips | hcloud Eip ListPublicips/v2 | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | ShowPublicip | hcloud Eip ShowPublicip/v2 | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | ListPublicips | hcloud EIP ListPublicips/v2 | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | ShowPublicip | hcloud EIP ShowPublicip/v2 | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

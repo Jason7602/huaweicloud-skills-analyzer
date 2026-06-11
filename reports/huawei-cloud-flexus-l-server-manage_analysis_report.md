@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | >- |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:45:12.148074+00:00 |
+| 分析时间 | 2026-06-11T08:49:18.458008+00:00 |
 
 ## Skill依赖工具
 
@@ -45,7 +45,7 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | KeystoneListProjects | hcloud iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | KeystoneListProjects | hcloud IAM KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
 | 2 | RenewalResources | hcloud Bss RenewalResources | 效果完全一致 | - | 可接受 | local_cli |
 | 3 | CancelResourcesSubscription | hcloud Bss CancelResourcesSubscription | 效果完全一致 | - | 可接受 | local_cli |
 

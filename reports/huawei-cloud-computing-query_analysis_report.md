@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud computing resources (ECS/BMS/IMS/AS), Covers ECS instances, flavors, keypairs, quotas, server groups, block devices, NICs, VNC console, BMS bare metal servers/flavors/quotas, IMS images/OS versions/members/quotas, and AS scaling groups/configs/policies/activity logs/lifecycle... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:45:51.280580+00:00 |
+| 分析时间 | 2026-06-11T08:49:34.942789+00:00 |
 
 ## Skill依赖工具
 
@@ -136,7 +136,7 @@
 
 ### 阶段结论
 
-共分析95个Open API接口，其中95个存在效果完全一致的KooCLI命令。
+共分析95个Open API接口，其中94个存在效果完全一致的KooCLI命令。
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -148,7 +148,7 @@
 | 6 | ListLifeCycleHooks | hcloud As ListLifeCycleHooks | 效果完全一致 | - | 可接受 | local_cli |
 | 7 | ListResourceInstances | hcloud As ListResourceInstances | 效果完全一致 | - | 可接受 | local_cli |
 | 8 | ListScalingActivityLogs | hcloud As ListScalingActivityLogs | 效果完全一致 | - | 可接受 | local_cli |
-| 9 | ListScalingActivityV2Logs | hcloud As ListScalingActivityLogs | 效果完全一致 | - | 可接受 | local_cli |
+| 9 | ListScalingActivityV2Logs | hcloud As ListScalingActivityV2Logs | 效果完全一致 | - | 可接受 | local_cli |
 | 10 | ListScalingConfigs | hcloud As ListScalingConfigs | 效果完全一致 | - | 可接受 | local_cli |
 | 11 | ListScalingGroups | hcloud As ListScalingGroups | 效果完全一致 | - | 可接受 | local_cli |
 | 12 | ListScalingInstances | hcloud As ListScalingInstances | 效果完全一致 | - | 可接受 | local_cli |
@@ -167,13 +167,13 @@
 | 25 | ShowScalingConfig | hcloud As ShowScalingConfig | 效果完全一致 | - | 可接受 | local_cli |
 | 26 | ShowScalingGroup | hcloud As ShowScalingGroup | 效果完全一致 | - | 可接受 | local_cli |
 | 27 | ShowScalingPolicy | hcloud As ShowScalingPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 28 | ShowScalingV2Policy | hcloud As ShowScalingPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 28 | ShowScalingV2Policy | hcloud As ShowScalingV2Policy | 效果完全一致 | - | 可接受 | local_cli |
 | 29 | ShowWarmPool | hcloud As ShowWarmPool | 效果完全一致 | - | 可接受 | local_cli |
 | 30 | ShowWarmPoolNew | hcloud As ShowWarmPoolNew | 效果完全一致 | - | 可接受 | local_cli |
-| 31 | ListVpcs | hcloud VPC ListVpcs/v2 | 效果完全一致 | - | 可接受 | local_cli |
-| 32 | ListSubnets | hcloud VPC ListSubnets | 效果完全一致 | - | 可接受 | local_cli |
+| 31 | ListVpcs | hcloud Vpc ListVpcs/v2 | 效果完全一致 | - | 可接受 | local_cli |
+| 32 | ListSubnets | hcloud Vpc ListSubnets | 效果完全一致 | - | 可接受 | local_cli |
 | 33 | ListBaremetalFlavorDetailExtends | hcloud Bms ListBaremetalFlavorDetailExtends | 效果完全一致 | - | 可接受 | local_cli |
-| 34 | ListBareMetalServers | hcloud Bms ListBareMetalServerDetails | 效果完全一致 | - | 可接受 | local_cli |
+| 34 | ListBareMetalServers | hcloud Bms ListBareMetalServers | 效果完全一致 | - | 可接受 | local_cli |
 | 35 | ListBareMetalServersDetail | hcloud Bms ListBareMetalServersDetail | 效果完全一致 | - | 可接受 | local_cli |
 | 36 | ListBareMetalServerDetails | hcloud Bms ListBareMetalServerDetails | 效果完全一致 | - | 可接受 | local_cli |
 | 37 | ShowAvailableResource | hcloud Bms ShowAvailableResource | 效果完全一致 | - | 可接受 | local_cli |
@@ -191,10 +191,10 @@
 | 49 | ListFlavors | hcloud ECS ListFlavors | 效果完全一致 | - | 可接受 | local_cli |
 | 50 | ListFlavorSellPolicies | hcloud ECS ListFlavorSellPolicies | 效果完全一致 | - | 可接受 | local_cli |
 | 51 | ListLaunchTemplateVersions | hcloud ECS ListLaunchTemplateVersions | 效果完全一致 | - | 可接受 | local_cli |
-| 52 | ListRecycleBinServers | hcloud ECS ListCloudServers | 效果完全一致 | - | 可接受 | local_cli |
+| 52 | ListRecycleBinServers | hcloud ECS ListRecycleBinServers | 效果完全一致 | - | 可接受 | local_cli |
 | 53 | ListResizeFlavors | hcloud ECS ListResizeFlavors | 效果完全一致 | - | 可接受 | local_cli |
 | 54 | ListScheduledEvents | hcloud ECS ListScheduledEvents | 效果完全一致 | - | 可接受 | local_cli |
-| 55 | ListServersByTag | hcloud ECS NovaListServerActions | 效果完全一致 | - | 可接受 | local_cli |
+| 55 | ListServersByTag | - | 无对应命令 | 无对应KooCLI命令 | 不可接受 | none |
 | 56 | ListServersDetails | hcloud ECS ListServersDetails | 效果完全一致 | - | 可接受 | local_cli |
 | 57 | ListServerAzInfo | hcloud ECS ListServerAzInfo | 效果完全一致 | - | 可接受 | local_cli |
 | 58 | ListServerBlockDevices | hcloud ECS ListServerBlockDevices | 效果完全一致 | - | 可接受 | local_cli |
@@ -223,42 +223,48 @@
 | 81 | ShowServerPassword | hcloud ECS ShowServerPassword | 效果完全一致 | - | 可接受 | local_cli |
 | 82 | ShowServerRemoteConsole | hcloud ECS ShowServerRemoteConsole | 效果完全一致 | - | 可接受 | local_cli |
 | 83 | ShowServerTags | hcloud ECS ShowServerTags | 效果完全一致 | - | 可接受 | local_cli |
-| 84 | ListImages | hcloud Ims ListImages | 效果完全一致 | - | 可接受 | local_cli |
-| 85 | ListImagesTags | hcloud Ims ListImagesTags | 效果完全一致 | - | 可接受 | local_cli |
-| 86 | ListImageByTags | hcloud Ims ListImageByTags | 效果完全一致 | - | 可接受 | local_cli |
-| 87 | ListImageMembers | hcloud Ims ListImageMembers | 效果完全一致 | - | 可接受 | local_cli |
-| 88 | ListImageTags | hcloud Ims ListImageTags | 效果完全一致 | - | 可接受 | local_cli |
-| 89 | ListOsVersions | hcloud Ims ListOsVersions | 效果完全一致 | - | 可接受 | local_cli |
-| 90 | ListTags | hcloud Ims ListTags | 效果完全一致 | - | 可接受 | local_cli |
-| 91 | GlanceShowImage | hcloud Ims GlanceShowImage | 效果完全一致 | - | 可接受 | local_cli |
-| 92 | ShowImageMember | hcloud Ims ShowImageMember | 效果完全一致 | - | 可接受 | local_cli |
-| 93 | ShowImageQuota | hcloud Ims ShowImageQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 94 | ShowJob | hcloud Ims ShowJob | 效果完全一致 | - | 可接受 | local_cli |
-| 95 | ShowJobProgress | hcloud Ims ShowJobProgress | 效果完全一致 | - | 可接受 | local_cli |
+| 84 | ListImages | hcloud IMS ListImages | 效果完全一致 | - | 可接受 | local_cli |
+| 85 | ListImagesTags | hcloud IMS ListImagesTags | 效果完全一致 | - | 可接受 | local_cli |
+| 86 | ListImageByTags | hcloud IMS ListImageByTags | 效果完全一致 | - | 可接受 | local_cli |
+| 87 | ListImageMembers | hcloud IMS ListImageMembers | 效果完全一致 | - | 可接受 | local_cli |
+| 88 | ListImageTags | hcloud IMS ListImageTags | 效果完全一致 | - | 可接受 | local_cli |
+| 89 | ListOsVersions | hcloud IMS ListOsVersions | 效果完全一致 | - | 可接受 | local_cli |
+| 90 | ListTags | hcloud IMS ListTags | 效果完全一致 | - | 可接受 | local_cli |
+| 91 | GlanceShowImage | hcloud IMS GlanceShowImage | 效果完全一致 | - | 可接受 | local_cli |
+| 92 | ShowImageMember | hcloud IMS ShowImageMember | 效果完全一致 | - | 可接受 | local_cli |
+| 93 | ShowImageQuota | hcloud IMS ShowImageQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 94 | ShowJob | hcloud IMS ShowJob | 效果完全一致 | - | 可接受 | local_cli |
+| 95 | ShowJobProgress | hcloud IMS ShowJobProgress | 效果完全一致 | - | 可接受 | local_cli |
 
+
+### 不完全一致或无对应命令接口清单
+- ListServersByTag（[API Explorer查询](https://console.huaweicloud.com/apiexplorer/#/openapi/ECS/cli?api=ListServersByTag)）
+
+通过在本地实际使用KooCLI命令查询，发现ListServersByTag确实没有与之对应的KooCLI命令。
 
 
 ## 第三阶段：全部改用KooCLI后的业务效果等价性结论
 
 | 项目 | 内容 |
 | --- | --- |
-| 替换结论 | 可以完全替换 |
-| 结论原因 | 所有接口均存在对应的KooCLI命令。 |
+| 替换结论 | 不能完全替换 |
+| 结论原因 | 存在必须接口无对应KooCLI命令。 |
 
 ### 关键阻塞点
 
-
-无关键阻塞点。
+| 序号 | 关联接口 | 阻塞原因 | 业务影响 | 建议处理方式 |
+| --- | --- | --- | --- | --- |
+| 1 | ListServersByTag | 无对应KooCLI命令 | 无法完全迁移该接口能力 | 保留SDK实现或人工验证KooCLI组合命令是否可接受 |
 
 ## 第四阶段：KooCLI本地验证结论
 
-基于规则分析，所有必须接口均存在效果完全一致的KooCLI命令，结论为可以完全替换。所有接口均存在对应的KooCLI命令。建议在实际替换前，通过本地KooCLI命令行工具对关键接口进行端到端验证，确认返回结果格式和业务流程无差异。
+基于规则分析，存在必须接口无法通过KooCLI实现等效替换（ListServersByTag），结论为不能完全替换。存在必须接口无对应KooCLI命令。建议保留这些接口的SDK实现方式，或探索KooCLI组合命令是否可达到近似业务效果。
 
 ## 最终结论
 
 
-该Skill是否能够全部改用KooCLI并达到与Huawei Cloud SDK实现一致的业务效果：**可以完全替换**。
+该Skill是否能够全部改用KooCLI并达到与Huawei Cloud SDK实现一致的业务效果：**不能完全替换**。
 
-原因：所有接口均存在对应的KooCLI命令。
+原因：存在必须接口无对应KooCLI命令。
 
 

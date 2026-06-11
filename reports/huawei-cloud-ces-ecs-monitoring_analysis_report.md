@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud ECS monitoring skill using Cloud Eye Service (CES). Provides comprehensive monitoring and metrics query for Elastic Cloud Server instances including CPU, memory, disk, network, and system metrics. Supports real-time monitoring, historical data query, and common metric analysis. Use w... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:44:28.353030+00:00 |
+| 分析时间 | 2026-06-11T08:48:56.680100+00:00 |
 
 ## Skill依赖工具
 

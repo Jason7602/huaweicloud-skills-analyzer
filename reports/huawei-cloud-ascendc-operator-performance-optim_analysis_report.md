@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Develop and optimize custom operators using AscendC programming language. Analyze operator performance bottlenecks and conduct optimization validation. Based on AscendC and CANN toolkit Use this skill when the user wants to: (1) optimize performance-critical operators on Ascend NPU, (2) develop c... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:07.705852+00:00 |
+| 分析时间 | 2026-06-11T08:49:41.367108+00:00 |
 
 ## Skill依赖工具
 

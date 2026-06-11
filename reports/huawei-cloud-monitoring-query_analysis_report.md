@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud monitoring and enterprise project resources (CES/EPS). Covers alarm rules, alarm histories, alarm templates, dashboards, notification masks, resource groups, one-click alarms, and enterprise projects (list/detail/quotas/bound resources/migration records). No write operations.... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:44:38.458672+00:00 |
+| 分析时间 | 2026-06-11T08:49:01.548364+00:00 |
 
 ## Skill依赖工具
 
@@ -57,9 +57,9 @@
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | KeystoneListProjects | hcloud Iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | ListAlarmHistories | hcloud Ces ListAlarmHistories/v1 | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | ListAlarmTemplates | hcloud Ces ListAlarmTemplates/v1 | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | ShowResourceGroup | hcloud Ces ShowResourceGroup/v1 | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | ListAlarmHistories | hcloud CES ListAlarmHistories/v1 | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | ListAlarmTemplates | hcloud CES ListAlarmTemplates/v1 | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | ShowResourceGroup | hcloud CES ShowResourceGroup/v1 | 效果完全一致 | - | 可接受 | local_cli |
 | 5 | ListApiVersions | hcloud EPS ListApiVersions | 效果完全一致 | - | 可接受 | local_cli |
 | 6 | ListEnterpriseProject | hcloud EPS ListEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
 | 7 | ListMigrationRecord | hcloud EPS ListMigrationRecord | 效果完全一致 | - | 可接受 | local_cli |

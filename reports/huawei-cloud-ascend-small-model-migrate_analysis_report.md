@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Migrate vision/detection/segmentation small models to Ascend NPU, covering the full workflow: model structure analysis, migration verification, performance profiling, and optimization. Based on torch_npu and msprof Use this skill when the user wants to: (1) migrate encoder-only models like ResNet... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:07.589510+00:00 |
+| 分析时间 | 2026-06-11T08:49:41.312726+00:00 |
 
 ## Skill依赖工具
 

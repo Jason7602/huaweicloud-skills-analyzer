@@ -84,3 +84,4 @@ class KooCliCorrespondence:
     acceptable: Acceptability = Acceptability.UNKNOWN
     info_source: CliInfoSource = CliInfoSource.NONE
     manual_verification_items: List[str] = field(default_factory=list)
+    api_explorer_url: str = ""

@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud SWR (Software Repository for Container) image automation and operations skill using hcloud CLI. Use this skill when the user wants to: (1) configure cross-region image sync (auto or manual), (2) manage SWR triggers for auto-deploy to CCE/CCI, (3) query available sync target regions, ... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:44:56.668433+00:00 |
+| 分析时间 | 2026-06-11T08:49:09.454012+00:00 |
 
 ## Skill依赖工具
 

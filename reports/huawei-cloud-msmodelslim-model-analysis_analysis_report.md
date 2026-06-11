@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Analyze candidate models before adapter implementation. Determine model implementation source (transformers or model-local), structural features, layer-by-layer loading requirements, and MoE fused weight risks. Use this skill when the user wants to: (1) assess model adaptation feasibility before ... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:08.068520+00:00 |
+| 分析时间 | 2026-06-11T08:49:41.526179+00:00 |
 
 ## Skill依赖工具
 

@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud storage resources (EVS/OBS/SFS/CBR). Covers cloud disks (volumes/snapshots/types/quotas/recycle bin), OBS buckets (ACL/metadata/notifications/policies/objects), SFS Turbo file systems (shares/perm rules/backend targets/quotas/LDAP/AD), and CBR backups (vaults/policies/backups... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:42:59.925512+00:00 |
+| 分析时间 | 2026-06-11T08:48:21.857211+00:00 |
 
 ## Skill依赖工具
 
@@ -193,28 +193,28 @@
 | 62 | HeadObject | hcloud obs ls | 效果完全一致 | - | 可接受 | local_cli |
 | 63 | ListBuckets | hcloud obs ls | 效果完全一致 | - | 可接受 | local_cli |
 | 64 | ListObjects | hcloud obs ls | 效果完全一致 | - | 可接受 | local_cli |
-| 65 | ListBackendTargets | hcloud SFSTURBO ListBackendTargets | 效果完全一致 | - | 可接受 | local_cli |
-| 66 | ListFsTasks | hcloud SFSTURBO ListFsTasks | 效果完全一致 | - | 可接受 | local_cli |
-| 67 | ListHpcCacheTasks | hcloud SFSTURBO ListHpcCacheTasks | 效果完全一致 | - | 可接受 | local_cli |
-| 68 | ListPermRules | hcloud SFSTURBO ListPermRules | 效果完全一致 | - | 可接受 | local_cli |
-| 69 | ListSharedTags | hcloud SFSTURBO ListSharedTags | 效果完全一致 | - | 可接受 | local_cli |
-| 70 | ListShares | hcloud SFSTURBO ListShares | 效果完全一致 | - | 可接受 | local_cli |
-| 71 | ListSharesByTag | hcloud SFSTURBO ListSharesByTag | 效果完全一致 | - | 可接受 | local_cli |
-| 72 | ListShareTypes | hcloud SFSTURBO ListShareTypes | 效果完全一致 | - | 可接受 | local_cli |
-| 73 | ShowActiveDirectoryDomain | hcloud SFSTURBO ShowActiveDirectoryDomain | 效果完全一致 | - | 可接受 | local_cli |
-| 74 | ShowBackendTargetInfo | hcloud SFSTURBO ShowBackendTargetInfo | 效果完全一致 | - | 可接受 | local_cli |
-| 75 | ShowClientIpInfo | hcloud SFSTURBO ShowClientIpInfo | 效果完全一致 | - | 可接受 | local_cli |
-| 76 | ShowFsDir | hcloud SFSTURBO ShowFsDir | 效果完全一致 | - | 可接受 | local_cli |
-| 77 | ShowFsDirQuota | hcloud SFSTURBO ShowFsDirQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 78 | ShowFsDirUsage | hcloud SFSTURBO ShowFsDirUsage | 效果完全一致 | - | 可接受 | local_cli |
-| 79 | ShowFsTask | hcloud SFSTURBO ShowFsTask | 效果完全一致 | - | 可接受 | local_cli |
-| 80 | ShowHpcCacheTask | hcloud SFSTURBO ShowHpcCacheTask | 效果完全一致 | - | 可接受 | local_cli |
-| 81 | ShowJobDetail | hcloud SFSTURBO ShowJobDetail | 效果完全一致 | - | 可接受 | local_cli |
-| 82 | ShowLdapConfig | hcloud SFSTURBO ShowLdapConfig | 效果完全一致 | - | 可接受 | local_cli |
-| 83 | ShowPermRule | hcloud SFSTURBO ShowPermRule | 效果完全一致 | - | 可接受 | local_cli |
-| 84 | ShowQuota | hcloud SFSTURBO ShowQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 85 | ShowShare | hcloud SFSTURBO ShowShare | 效果完全一致 | - | 可接受 | local_cli |
-| 86 | ShowSharedTags | hcloud SFSTURBO ShowSharedTags | 效果完全一致 | - | 可接受 | local_cli |
+| 65 | ListBackendTargets | hcloud SFSTurbo ListBackendTargets | 效果完全一致 | - | 可接受 | local_cli |
+| 66 | ListFsTasks | hcloud SFSTurbo ListFsTasks | 效果完全一致 | - | 可接受 | local_cli |
+| 67 | ListHpcCacheTasks | hcloud SFSTurbo ListHpcCacheTasks | 效果完全一致 | - | 可接受 | local_cli |
+| 68 | ListPermRules | hcloud SFSTurbo ListPermRules | 效果完全一致 | - | 可接受 | local_cli |
+| 69 | ListSharedTags | hcloud SFSTurbo ListSharedTags | 效果完全一致 | - | 可接受 | local_cli |
+| 70 | ListShares | hcloud SFSTurbo ListShares | 效果完全一致 | - | 可接受 | local_cli |
+| 71 | ListSharesByTag | hcloud SFSTurbo ListSharesByTag | 效果完全一致 | - | 可接受 | local_cli |
+| 72 | ListShareTypes | hcloud SFSTurbo ListShareTypes | 效果完全一致 | - | 可接受 | local_cli |
+| 73 | ShowActiveDirectoryDomain | hcloud SFSTurbo ShowActiveDirectoryDomain | 效果完全一致 | - | 可接受 | local_cli |
+| 74 | ShowBackendTargetInfo | hcloud SFSTurbo ShowBackendTargetInfo | 效果完全一致 | - | 可接受 | local_cli |
+| 75 | ShowClientIpInfo | hcloud SFSTurbo ShowClientIpInfo | 效果完全一致 | - | 可接受 | local_cli |
+| 76 | ShowFsDir | hcloud SFSTurbo ShowFsDir | 效果完全一致 | - | 可接受 | local_cli |
+| 77 | ShowFsDirQuota | hcloud SFSTurbo ShowFsDirQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 78 | ShowFsDirUsage | hcloud SFSTurbo ShowFsDirUsage | 效果完全一致 | - | 可接受 | local_cli |
+| 79 | ShowFsTask | hcloud SFSTurbo ShowFsTask | 效果完全一致 | - | 可接受 | local_cli |
+| 80 | ShowHpcCacheTask | hcloud SFSTurbo ShowHpcCacheTask | 效果完全一致 | - | 可接受 | local_cli |
+| 81 | ShowJobDetail | hcloud SFSTurbo ShowJobDetail | 效果完全一致 | - | 可接受 | local_cli |
+| 82 | ShowLdapConfig | hcloud SFSTurbo ShowLdapConfig | 效果完全一致 | - | 可接受 | local_cli |
+| 83 | ShowPermRule | hcloud SFSTurbo ShowPermRule | 效果完全一致 | - | 可接受 | local_cli |
+| 84 | ShowQuota | hcloud SFSTurbo ShowQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 85 | ShowShare | hcloud SFSTurbo ShowShare | 效果完全一致 | - | 可接受 | local_cli |
+| 86 | ShowSharedTags | hcloud SFSTurbo ShowSharedTags | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

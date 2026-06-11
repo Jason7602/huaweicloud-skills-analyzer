@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Calculate MFU (Machine FLOP Utilization) for operators like matmul/GEMM/FlashAttention on Ascend NPU, providing clear formulas and derivation process Use this skill when the user wants to: (1) calculate MFU for matrix operations, (2) analyze operator performance efficiency, (3) understand hardwar... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:06.677898+00:00 |
+| 分析时间 | 2026-06-11T08:49:40.967555+00:00 |
 
 ## Skill依赖工具
 

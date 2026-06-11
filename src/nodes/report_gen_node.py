@@ -181,6 +181,7 @@ def _dict_to_koocli_correspondence(d: dict) -> KooCliCorrespondence:
         acceptable=_safe_enum(Acceptability, d.get("acceptable"), Acceptability.UNKNOWN),
         info_source=_safe_enum(CliInfoSource, d.get("info_source"), CliInfoSource.NONE),
         manual_verification_items=d.get("manual_verification_items", []),
+        api_explorer_url=d.get("api_explorer_url", ""),
     )
 
 

@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Collect operator-level performance data on Ascend NPU using msopprof tool. Supports both device mode and simulator mode, generates performance analysis reports. Use this skill when the user wants to: (1) profile operator performance on Ascend NPU, (2) collect performance data for analysis, (3) id... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-11T01:46:08.172114+00:00 |
+| 分析时间 | 2026-06-11T08:49:41.609111+00:00 |
 
 ## Skill依赖工具
 
