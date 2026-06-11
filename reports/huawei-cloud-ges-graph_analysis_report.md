@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Provides access guide for Huawei Cloud Graph Database GES service. Covers Cypher queries, GQL queries, schema/label management, summary info queries, graph data editing and more. Use this skill when users want to operate Huawei Cloud graph database GES service via terminal. |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:41:23.026977+00:00 |
+| 分析时间 | 2026-06-11T01:46:02.072926+00:00 |
 
 ## Skill依赖工具
 

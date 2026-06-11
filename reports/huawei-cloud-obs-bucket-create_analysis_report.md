@@ -8,7 +8,7 @@
 | 实现方式 | KooCLI |
 | 业务目标 | Skill specialized for creating buckets on Huawei Cloud OBS. Use this skill when users need to create OBS buckets, set bucket properties, configure access permissions, or need guidance on the bucket creation process. Trigger conditions: "创建OBS桶", "华为云存储桶", "存储空间创建", "create OBS bucket", "Huawei Cl... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:38:31.144013+00:00 |
+| 分析时间 | 2026-06-11T01:42:31.135128+00:00 |
 
 ## Skill依赖工具
 

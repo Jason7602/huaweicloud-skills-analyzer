@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Invoke this skill to search, discover, browse, find and install any Huawei Cloud (华为云) agent skill.Triggers include: "华为云","华为云有什么skill","华为云相关skill","华为云agent skill 市场","华为云skill类目","explore Huawei Cloud skills","show Huawei Cloud skill categories","does a Huawei Cloud skill exist for...","which... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:14.162937+00:00 |
+| 分析时间 | 2026-06-11T01:44:38.923440+00:00 |
 
 ## Skill依赖工具
 

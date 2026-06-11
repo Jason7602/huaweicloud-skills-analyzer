@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud monitoring and enterprise project resources (CES/EPS). Covers alarm rules, alarm histories, alarm templates, dashboards, notification masks, resource groups, one-click alarms, and enterprise projects (list/detail/quotas/bound resources/migration records). No write operations.... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:13.680443+00:00 |
+| 分析时间 | 2026-06-11T01:44:38.458672+00:00 |
 
 ## Skill依赖工具
 
@@ -56,21 +56,21 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | KeystoneListProjects | hcloud IAM KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | ListAlarmHistories | hcloud CES ListAlarmHistories/v1 | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | ListAlarmTemplates | hcloud CES ListAlarmTemplates/v1 | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | ShowResourceGroup | hcloud CES ShowResourceGroup/v1 | 效果完全一致 | - | 可接受 | local_cli |
-| 5 | ListApiVersions | hcloud Eps ListApiVersions | 效果完全一致 | - | 可接受 | local_cli |
-| 6 | ListEnterpriseProject | hcloud Eps ListEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
-| 7 | ListMigrationRecord | hcloud Eps ListMigrationRecord | 效果完全一致 | - | 可接受 | local_cli |
-| 8 | ListProviders | hcloud Eps ListProviders | 效果完全一致 | - | 可接受 | local_cli |
-| 9 | ListResourceMapping | hcloud Eps ListResourceMapping | 效果完全一致 | - | 可接受 | local_cli |
-| 10 | ShowApiVersion | hcloud Eps ShowApiVersion | 效果完全一致 | - | 可接受 | local_cli |
-| 11 | ShowAssociatedResources | hcloud Eps ShowAssociatedResources | 效果完全一致 | - | 可接受 | local_cli |
-| 12 | ShowEnterpriseProject | hcloud Eps ShowEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
-| 13 | ShowEnterpriseProjectQuota | hcloud Eps ShowEnterpriseProjectQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 14 | ShowEpConfigs | hcloud Eps ShowEpConfigs | 效果完全一致 | - | 可接受 | local_cli |
-| 15 | ShowResourceBindEnterpriseProject | hcloud Eps ShowResourceBindEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | KeystoneListProjects | hcloud Iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | ListAlarmHistories | hcloud Ces ListAlarmHistories/v1 | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | ListAlarmTemplates | hcloud Ces ListAlarmTemplates/v1 | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | ShowResourceGroup | hcloud Ces ShowResourceGroup/v1 | 效果完全一致 | - | 可接受 | local_cli |
+| 5 | ListApiVersions | hcloud EPS ListApiVersions | 效果完全一致 | - | 可接受 | local_cli |
+| 6 | ListEnterpriseProject | hcloud EPS ListEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 7 | ListMigrationRecord | hcloud EPS ListMigrationRecord | 效果完全一致 | - | 可接受 | local_cli |
+| 8 | ListProviders | hcloud EPS ListProviders | 效果完全一致 | - | 可接受 | local_cli |
+| 9 | ListResourceMapping | hcloud EPS ListResourceMapping | 效果完全一致 | - | 可接受 | local_cli |
+| 10 | ShowApiVersion | hcloud EPS ShowApiVersion | 效果完全一致 | - | 可接受 | local_cli |
+| 11 | ShowAssociatedResources | hcloud EPS ShowAssociatedResources | 效果完全一致 | - | 可接受 | local_cli |
+| 12 | ShowEnterpriseProject | hcloud EPS ShowEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 13 | ShowEnterpriseProjectQuota | hcloud EPS ShowEnterpriseProjectQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 14 | ShowEpConfigs | hcloud EPS ShowEpConfigs | 效果完全一致 | - | 可接受 | local_cli |
+| 15 | ShowResourceBindEnterpriseProject | hcloud EPS ShowResourceBindEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Convert natural language questions into safe executable SQL to query Ascend PyTorch Profiler / msprof database for operator time consumption, communication, dispatch, and other performance data. Supports table schema extraction from official documentation. Use this skill when the user wants to: (... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:41:27.204028+00:00 |
+| 分析时间 | 2026-06-11T01:46:06.827026+00:00 |
 
 ## Skill依赖工具
 

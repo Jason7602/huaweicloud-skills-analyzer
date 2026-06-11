@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud UCS (Universal Cloud Service) policy governance and compliance management skill using hcloud CLI. Use this skill when the user wants to: (1) manage UCS policy instances - create/update/query/delete, (2) manage UCS policy definitions - query/list, (3) enable/disable policies on cluste... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:29.382386+00:00 |
+| 分析时间 | 2026-06-11T01:44:57.821581+00:00 |
 
 ## Skill依赖工具
 

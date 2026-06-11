@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Query Huawei Cloud MaaS (Model as a Service) tokens usage statistics, including total tokens, prompt tokens, completion tokens, total requests, and total errors. Supports preset service, my service, and custom endpoint with time range queries (last 7/14/30 days or custom). Data source is MaaS Sho... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:41:26.269137+00:00 |
+| 分析时间 | 2026-06-11T01:46:05.885006+00:00 |
 
 ## Skill依赖工具
 
@@ -23,23 +23,25 @@
 
 ### 阶段结论
 
-共识别2个Open API接口。
+共识别3个Open API接口。
 
 | 序号 | 服务 | Open API接口 | HTTP方法 | API路径 | 来源SDK调用 | 实际使用参数 | 业务作用 | 是否必须 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | modelarts | GetShow-statistics | GET | /v1/{var}/maas/monitoring/show-statistics | SignerBypass.get_show-statistics (scripts\maas_rest_usage_stats.py:68) | resource_path, http_method | 通过modelarts服务执行show操作，作用对象为show-statistics | mandatory |
-| 2 | modelarts | PostShow-statistics | POST | /v1/{var}/maas/monitoring/show-statistics | SignerBypass.post_show-statistics (scripts\maas_rest_usage_stats.py:104) | resource_path, http_method | 通过modelarts服务执行show操作，作用对象为show-statistics | mandatory |
+| 1 | modelarts | ListShowStatistics | GET | /v1/{var}/maas/monitoring/show-statistics | SignerBypass.list_show_statistics (scripts\maas_rest_usage_stats.py:68) | resource_path, http_method | 通过modelarts服务执行show操作，作用对象为show-statistics | mandatory |
+| 2 | iam | KeystoneListProjects | GET | /v3/projects | SignerBypass.keystone_list_projects (scripts\maas_rest_usage_stats.py:90) | resource_path, http_method | 通过iam服务执行list操作，作用对象为projects | mandatory |
+| 3 | modelarts | CreateShowStatistics | POST | /v1/{var}/maas/monitoring/show-statistics | SignerBypass.create_show_statistics (scripts\maas_rest_usage_stats.py:104) | resource_path, http_method | 通过modelarts服务执行create操作，作用对象为show-statistics | mandatory |
 
 ## 第二阶段：KooCLI命令一一对应关系与效果完全一致判定
 
 ### 阶段结论
 
-共分析2个Open API接口，其中2个存在效果完全一致的KooCLI命令。
+共分析3个Open API接口，其中3个存在效果完全一致的KooCLI命令。
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | GetShow-statistics | hcloud modelarts ShowAlgorithmByUuid | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | PostShow-statistics | hcloud modelarts ShowAlgorithmByUuid | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | ListShowStatistics | hcloud MODELARTS ShowAlgorithmByUuid | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | KeystoneListProjects | hcloud iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | CreateShowStatistics | hcloud MODELARTS BatchCreateServiceTags | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

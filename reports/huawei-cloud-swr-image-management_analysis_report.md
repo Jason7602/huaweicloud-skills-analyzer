@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud SWR (Software Repository for Container) image lifecycle management skill using hcloud CLI. Use this skill when the user wants to: (1) manage SWR namespaces (organizations) - create/query/delete, (2) manage image repositories - create/query/update/delete, (3) manage image tags/version... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:28.826128+00:00 |
+| 分析时间 | 2026-06-11T01:44:57.232892+00:00 |
 
 ## Skill依赖工具
 

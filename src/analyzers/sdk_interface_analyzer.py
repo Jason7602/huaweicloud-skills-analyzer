@@ -334,7 +334,6 @@ class SdkInterfaceAnalyzer:
             if isinstance(node, ast.FunctionDef):
                 local_vt: Dict[str, str] = {}
                 local_sv: Dict[str, str] = {}
-                self._collect_string_context(node, local_sv)
                 for child in ast.walk(node):
                     setattr(child, '_parent_func', node.name)
                     if isinstance(child, ast.Assign):
@@ -345,6 +344,16 @@ class SdkInterfaceAnalyzer:
                             cls = self._resolve_assign_to_client(child.value, client_classes, func_returns)
                             if cls:
                                 local_vt[key] = cls
+                            str_val = self._resolve_string_expr(child.value, local_str_vars)
+                            if str_val:
+                                local_sv[f"__str__{key}"] = str_val
+                                svc = self._parse_url_to_service(str_val) or self._parse_host_to_service(str_val)
+                                if svc:
+                                    local_sv[f"__svc__{key}"] = svc
+                            if isinstance(child.value, ast.Call) and self._is_urlparse_call(child.value):
+                                source = self._resolve_string_expr(child.value.args[0], local_str_vars) if child.value.args else None
+                                if source:
+                                    local_sv[f"__urlparse__{key}"] = source
 
                 combined_vt = dict(var_types)
                 combined_vt.update(local_vt)
@@ -388,7 +397,6 @@ class SdkInterfaceAnalyzer:
         module_vt = dict(var_types)
         module_sv = dict(local_str_vars)
 
-        self._collect_string_context(tree, module_sv, exclude_func=True)
         for node in ast.walk(tree):
             if isinstance(node, ast.Assign) and not _in_function(node):
                 for target in node.targets:
@@ -398,6 +406,12 @@ class SdkInterfaceAnalyzer:
                     cls = self._resolve_assign_to_client(node.value, client_classes, func_returns)
                     if cls:
                         module_vt[key] = cls
+                    str_val = self._resolve_string_expr(node.value, local_str_vars)
+                    if str_val:
+                        module_sv[f"__str__{key}"] = str_val
+                        svc = self._parse_url_to_service(str_val) or self._parse_host_to_service(str_val)
+                        if svc:
+                            module_sv[f"__svc__{key}"] = svc
 
         for node in ast.walk(tree):
             if isinstance(node, ast.Call) and not _in_function(node):

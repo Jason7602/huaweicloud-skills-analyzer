@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Huawei Cloud CCE (Cloud Container Engine) cluster lifecycle management skill using Python SDK v3. Use this skill when the user wants to: (1) create, delete, hibernate, or awake CCE clusters, (2) list clusters and query cluster/node/nodepool/addon information, (3) manage node pools (create, delete... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:24.378175+00:00 |
+| 分析时间 | 2026-06-11T01:44:52.161427+00:00 |
 
 ## Skill依赖工具
 
@@ -84,30 +84,30 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | ListAddonInstances | hcloud Cce ListAddonInstances | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | CreateAddonInstance | hcloud Cce CreateAddonInstance | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | DeleteAddonInstance | hcloud Cce DeleteAddonInstance | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | UpdateAddonInstance | hcloud Cce UpdateAddonInstance | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | ListAddonInstances | hcloud CCE ListAddonInstances | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | CreateAddonInstance | hcloud CCE CreateAddonInstance | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | DeleteAddonInstance | hcloud CCE DeleteAddonInstance | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | UpdateAddonInstance | hcloud CCE UpdateAddonInstance | 效果完全一致 | - | 可接受 | local_cli |
 | 5 | ShowSubnet | hcloud VPC ShowSubnet | 效果完全一致 | - | 可接受 | local_cli |
-| 6 | ListClusters | hcloud Cce ListClusters | 效果完全一致 | - | 可接受 | local_cli |
-| 7 | ListNodes | hcloud Cce ListNodes | 效果完全一致 | - | 可接受 | local_cli |
-| 8 | CreateKubernetesClusterCert | hcloud Cce CreateKubernetesClusterCert | 效果完全一致 | - | 可接受 | local_cli |
-| 9 | DeleteCluster | hcloud Cce DeleteCluster | 效果完全一致 | - | 可接受 | local_cli |
-| 10 | HibernateCluster | hcloud Cce HibernateCluster | 效果完全一致 | - | 可接受 | local_cli |
-| 11 | AwakeCluster | hcloud Cce AwakeCluster | 效果完全一致 | - | 可接受 | local_cli |
-| 12 | UpdateClusterEip | hcloud Cce UpdateClusterEip | 效果完全一致 | - | 可接受 | local_cli |
-| 13 | ShowCluster | hcloud Cce ShowCluster | 效果完全一致 | - | 可接受 | local_cli |
-| 14 | CreateCluster | hcloud Cce CreateCluster | 效果完全一致 | - | 可接受 | local_cli |
-| 15 | DeleteNode | hcloud Cce DeleteNode | 效果完全一致 | - | 可接受 | local_cli |
-| 16 | CreateNode | hcloud Cce CreateNode | 效果完全一致 | - | 可接受 | local_cli |
-| 17 | ListNodePools | hcloud Cce ListNodePools | 效果完全一致 | - | 可接受 | local_cli |
-| 18 | ScaleNodePool | hcloud Cce ScaleNodePool | 效果完全一致 | - | 可接受 | local_cli |
-| 19 | CreateNodePool | hcloud Cce CreateNodePool | 效果完全一致 | - | 可接受 | local_cli |
-| 20 | DeleteNodePool | hcloud Cce DeleteNodePool | 效果完全一致 | - | 可接受 | local_cli |
-| 21 | KeystoneListProjects | hcloud IAM KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 6 | ListClusters | hcloud CCE ListClusters | 效果完全一致 | - | 可接受 | local_cli |
+| 7 | ListNodes | hcloud CCE ListNodes | 效果完全一致 | - | 可接受 | local_cli |
+| 8 | CreateKubernetesClusterCert | hcloud CCE CreateKubernetesClusterCert | 效果完全一致 | - | 可接受 | local_cli |
+| 9 | DeleteCluster | hcloud CCE DeleteCluster | 效果完全一致 | - | 可接受 | local_cli |
+| 10 | HibernateCluster | hcloud CCE HibernateCluster | 效果完全一致 | - | 可接受 | local_cli |
+| 11 | AwakeCluster | hcloud CCE AwakeCluster | 效果完全一致 | - | 可接受 | local_cli |
+| 12 | UpdateClusterEip | hcloud CCE UpdateClusterEip | 效果完全一致 | - | 可接受 | local_cli |
+| 13 | ShowCluster | hcloud CCE ShowCluster | 效果完全一致 | - | 可接受 | local_cli |
+| 14 | CreateCluster | hcloud CCE CreateCluster | 效果完全一致 | - | 可接受 | local_cli |
+| 15 | DeleteNode | hcloud CCE DeleteNode | 效果完全一致 | - | 可接受 | local_cli |
+| 16 | CreateNode | hcloud CCE CreateNode | 效果完全一致 | - | 可接受 | local_cli |
+| 17 | ListNodePools | hcloud CCE ListNodePools | 效果完全一致 | - | 可接受 | local_cli |
+| 18 | ScaleNodePool | hcloud CCE ScaleNodePool | 效果完全一致 | - | 可接受 | local_cli |
+| 19 | CreateNodePool | hcloud CCE CreateNodePool | 效果完全一致 | - | 可接受 | local_cli |
+| 20 | DeleteNodePool | hcloud CCE DeleteNodePool | 效果完全一致 | - | 可接受 | local_cli |
+| 21 | KeystoneListProjects | hcloud Iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
 | 22 | NeutronListFirewallGroups | hcloud VPC NeutronListFirewallGroups | 效果完全一致 | - | 可接受 | local_cli |
 | 23 | ListPublicips | hcloud EIP ListPublicips/v2 | 效果完全一致 | - | 可接受 | local_cli |
-| 24 | ShowMetricData | hcloud CES ShowMetricData | 效果完全一致 | - | 可接受 | local_cli |
+| 24 | ShowMetricData | hcloud Ces ShowMetricData | 效果完全一致 | - | 可接受 | local_cli |
 | 25 | ListVpcs | hcloud VPC ListVpcs/v2 | 效果完全一致 | - | 可接受 | local_cli |
 | 26 | ListSubnets | hcloud VPC ListSubnets | 效果完全一致 | - | 可接受 | local_cli |
 | 27 | ListSecurityGroups | hcloud VPC ListSecurityGroups/v2 | 效果完全一致 | - | 可接受 | local_cli |

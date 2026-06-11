@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Configure Huawei Cloud OBS static website hosting with Python SDK. Use when the user needs to enable or repair OBS website hosting, set index or error pages, expose an existing bucket for public website access, or connect a custom domain through Huawei Cloud DNS. Triggers include OBS static websi... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:38:32.508936+00:00 |
+| 分析时间 | 2026-06-11T01:42:32.642039+00:00 |
 
 ## Skill依赖工具
 

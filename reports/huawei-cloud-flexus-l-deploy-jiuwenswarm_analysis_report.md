@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | One-click deployment of JiuwenSwarm multi-Agent collaboration platform on Huawei Cloud Flexus L instances. Usage scenarios: When users need to quickly deploy JiuwenSwarm/JiuwenClaw on Huawei Cloud Flexus L instances, when they need to automatically create cloud instances and deploy AI Agent platf... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:35.762013+00:00 |
+| 分析时间 | 2026-06-11T01:45:07.338667+00:00 |
 
 ## Skill依赖工具
 
@@ -29,27 +29,31 @@
 
 ### 阶段结论
 
-共识别4个Open API接口。
+共识别6个Open API接口。
 
 | 序号 | 服务 | Open API接口 | HTTP方法 | API路径 | 来源SDK调用 | 实际使用参数 | 业务作用 | 是否必须 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Rms | ListAllResources | GET | /v1/resource-manager/domains/{domain_id}/all-resources | RmsClient.list_all_resources (scripts\config_channel.py:66) | - | 通过Rms服务执行list操作，作用对象为all-resources | mandatory |
-| 2 | Coc | GetScriptJobInfo | GET | /v1/job/script/orders/{execute_uuid} | CocClient.get_script_job_info (scripts\utils.py:182) | - | 通过Coc服务执行get操作，作用对象为orders | mandatory |
-| 3 | Coc | CreateScript | POST | /v1/job/scripts | CocClient.create_script (scripts\utils.py:657) | - | 通过Coc服务执行create操作，作用对象为scripts | mandatory |
-| 4 | Coc | ExecuteScript | POST | /v1/job/scripts/{script_uuid} | CocClient.execute_script (scripts\utils.py:858) | - | 通过Coc服务执行ExecuteScript操作，作用对象为scripts | mandatory |
+| 2 | iam | KeystoneListProjects | GET | /v3/projects | SignerBypass.keystone_list_projects (scripts\create_instance.py:74) | resource_path, http_method | 通过iam服务执行list操作，作用对象为projects | mandatory |
+| 3 | iam | CreateLightInstances | POST | /v1/light-instances | SignerBypass.create_light_instances (scripts\create_instance.py:172) | resource_path, http_method | 通过iam服务执行create操作，作用对象为light-instances | mandatory |
+| 4 | Coc | GetScriptJobInfo | GET | /v1/job/script/orders/{execute_uuid} | CocClient.get_script_job_info (scripts\utils.py:182) | - | 通过Coc服务执行get操作，作用对象为orders | mandatory |
+| 5 | Coc | CreateScript | POST | /v1/job/scripts | CocClient.create_script (scripts\utils.py:657) | - | 通过Coc服务执行create操作，作用对象为scripts | mandatory |
+| 6 | Coc | ExecuteScript | POST | /v1/job/scripts/{script_uuid} | CocClient.execute_script (scripts\utils.py:858) | - | 通过Coc服务执行ExecuteScript操作，作用对象为scripts | mandatory |
 
 ## 第二阶段：KooCLI命令一一对应关系与效果完全一致判定
 
 ### 阶段结论
 
-共分析4个Open API接口，其中4个存在效果完全一致的KooCLI命令。
+共分析6个Open API接口，其中6个存在效果完全一致的KooCLI命令。
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | ListAllResources | hcloud Rms ListAllResources | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | GetScriptJobInfo | hcloud COC GetScriptJobInfo | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | CreateScript | hcloud COC CreateScript | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | ExecuteScript | hcloud COC ExecuteScript | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | KeystoneListProjects | hcloud iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | CreateLightInstances | hcloud iam CreateAccessKeyV5 | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | GetScriptJobInfo | hcloud Coc GetScriptJobInfo | 效果完全一致 | - | 可接受 | local_cli |
+| 5 | CreateScript | hcloud Coc CreateScript | 效果完全一致 | - | 可接受 | local_cli |
+| 6 | ExecuteScript | hcloud Coc ExecuteScript | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

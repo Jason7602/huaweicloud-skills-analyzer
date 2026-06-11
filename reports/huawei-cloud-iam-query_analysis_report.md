@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud identity and access management resources (IAM) via read-only Python SDK. Covers users, groups, policies, agencies, AK/SK, MFA devices, login/password/ACL policies, security compliance, and account quotas. No write operations. Use this skill when the user needs to query IAM id... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:39:15.053491+00:00 |
+| 分析时间 | 2026-06-11T01:43:27.714617+00:00 |
 
 ## Skill依赖工具
 
@@ -113,80 +113,80 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | KeystoneListProjects | hcloud IAM KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
-| 2 | CheckAllProjectsPermissionForAgency | hcloud IAM CheckAllProjectsPermissionForAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | CheckDomainPermissionForAgency | hcloud IAM CheckDomainPermissionForAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | CheckProjectPermissionForAgency | hcloud IAM CheckProjectPermissionForAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 5 | KeystoneCheckroleForGroup | hcloud IAM KeystoneCheckroleForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 6 | KeystoneCheckDomainPermissionForGroup | hcloud IAM KeystoneCheckDomainPermissionForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 7 | KeystoneCheckProjectPermissionForGroup | hcloud IAM KeystoneCheckProjectPermissionForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 8 | KeystoneCheckUserInGroup | hcloud IAM KeystoneCheckUserInGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 9 | KeystoneListAllProjectPermissionsForGroup | hcloud IAM KeystoneListAllProjectPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 10 | KeystoneListAuthDomains | hcloud IAM KeystoneListAuthDomains | 效果完全一致 | - | 可接受 | local_cli |
-| 11 | KeystoneListAuthProjects | hcloud IAM KeystoneListAuthProjects | 效果完全一致 | - | 可接受 | local_cli |
-| 12 | KeystoneListDomainPermissionsForGroup | hcloud IAM KeystoneListDomainPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 13 | KeystoneListEndpoints | hcloud IAM KeystoneListEndpoints | 效果完全一致 | - | 可接受 | local_cli |
-| 14 | KeystoneListFederationDomains | hcloud IAM KeystoneListFederationDomains | 效果完全一致 | - | 可接受 | local_cli |
-| 15 | KeystoneListFederationProjects | hcloud IAM KeystoneListFederationProjects | 效果完全一致 | - | 可接受 | local_cli |
-| 16 | KeystoneListGroups | hcloud IAM KeystoneListGroups | 效果完全一致 | - | 可接受 | local_cli |
-| 17 | KeystoneListGroupsForUser | hcloud IAM KeystoneListGroupsForUser | 效果完全一致 | - | 可接受 | local_cli |
-| 18 | KeystoneListIdentityProviders | hcloud IAM KeystoneListIdentityProviders | 效果完全一致 | - | 可接受 | local_cli |
-| 19 | KeystoneListMappings | hcloud IAM KeystoneListMappings | 效果完全一致 | - | 可接受 | local_cli |
-| 20 | KeystoneListPermissions | hcloud IAM KeystoneListPermissions | 效果完全一致 | - | 可接受 | local_cli |
-| 21 | KeystoneListProjectsForUser | hcloud IAM KeystoneListProjectsForUser | 效果完全一致 | - | 可接受 | local_cli |
-| 22 | KeystoneListProjectPermissionsForGroup | hcloud IAM KeystoneListProjectPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 23 | KeystoneListProtocols | hcloud IAM KeystoneListProtocols | 效果完全一致 | - | 可接受 | local_cli |
-| 24 | KeystoneListRegions | hcloud IAM KeystoneListRegions | 效果完全一致 | - | 可接受 | local_cli |
-| 25 | KeystoneListServices | hcloud IAM KeystoneListServices | 效果完全一致 | - | 可接受 | local_cli |
-| 26 | KeystoneListUsers | hcloud IAM KeystoneListUsers | 效果完全一致 | - | 可接受 | local_cli |
-| 27 | KeystoneListUsersForGroupByAdmin | hcloud IAM KeystoneListUsersForGroupByAdmin | 效果完全一致 | - | 可接受 | local_cli |
-| 28 | KeystoneListVersions | hcloud IAM KeystoneListVersions | 效果完全一致 | - | 可接受 | local_cli |
-| 29 | KeystoneShowCatalog | hcloud IAM KeystoneShowCatalog | 效果完全一致 | - | 可接受 | local_cli |
-| 30 | KeystoneShowEndpoint | hcloud IAM KeystoneShowEndpoint | 效果完全一致 | - | 可接受 | local_cli |
-| 31 | KeystoneShowGroup | hcloud IAM KeystoneShowGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 32 | KeystoneShowIdentityProvider | hcloud IAM KeystoneShowIdentityProvider | 效果完全一致 | - | 可接受 | local_cli |
-| 33 | KeystoneShowMapping | hcloud IAM KeystoneShowMapping | 效果完全一致 | - | 可接受 | local_cli |
-| 34 | KeystoneShowPermission | hcloud IAM KeystoneShowPermission | 效果完全一致 | - | 可接受 | local_cli |
-| 35 | KeystoneShowProject | hcloud IAM KeystoneShowProject | 效果完全一致 | - | 可接受 | local_cli |
-| 36 | KeystoneShowProtocol | hcloud IAM KeystoneShowProtocol | 效果完全一致 | - | 可接受 | local_cli |
-| 37 | KeystoneShowRegion | hcloud IAM KeystoneShowRegion | 效果完全一致 | - | 可接受 | local_cli |
-| 38 | KeystoneShowSecurityCompliance | hcloud IAM KeystoneShowSecurityCompliance | 效果完全一致 | - | 可接受 | local_cli |
-| 39 | KeystoneShowSecurityComplianceByOption | hcloud IAM KeystoneShowSecurityComplianceByOption | 效果完全一致 | - | 可接受 | local_cli |
-| 40 | KeystoneShowService | hcloud IAM KeystoneShowService | 效果完全一致 | - | 可接受 | local_cli |
-| 41 | KeystoneShowUser | hcloud IAM KeystoneShowUser | 效果完全一致 | - | 可接受 | local_cli |
-| 42 | KeystoneShowVersion | hcloud IAM KeystoneShowVersion | 效果完全一致 | - | 可接受 | local_cli |
-| 43 | KeystoneValidateToken | hcloud IAM KeystoneValidateToken | 效果完全一致 | - | 可接受 | local_cli |
-| 44 | ListAgencies | hcloud IAM ListAgencies | 效果完全一致 | - | 可接受 | local_cli |
-| 45 | ListAllProjectsPermissionsForAgency | hcloud IAM ListAllProjectsPermissionsForAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 46 | ListCustomPolicies | hcloud IAM ListCustomPolicies | 效果完全一致 | - | 可接受 | local_cli |
-| 47 | ListDomainPermissionsForAgency | hcloud IAM ListDomainPermissionsForAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 48 | ListEnterpriseProjectsForGroup | hcloud IAM ListEnterpriseProjectsForGroup | 效果完全一致 | - | 可接受 | local_cli |
-| 49 | ListEnterpriseProjectsForUser | hcloud IAM ListEnterpriseProjectsForUser | 效果完全一致 | - | 可接受 | local_cli |
-| 50 | ListGroupsForEnterpriseProject | hcloud IAM ListGroupsForEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
-| 51 | ListPermanentAccessKeys | hcloud IAM ListPermanentAccessKeys | 效果完全一致 | - | 可接受 | local_cli |
-| 52 | ListProjectPermissionsForAgency | hcloud IAM ListProjectPermissionsForAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 53 | ListRolesForGroupOnEnterpriseProject | hcloud IAM ListRolesForGroupOnEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
-| 54 | ListRolesForUserOnEnterpriseProject | hcloud IAM ListRolesForUserOnEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
-| 55 | ListUsersForEnterpriseProject | hcloud IAM ListUsersForEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
-| 56 | ListUserLoginProtects | hcloud IAM ListUserLoginProtects | 效果完全一致 | - | 可接受 | local_cli |
-| 57 | ListUserMfaDevices | hcloud IAM ListUserMfaDevices | 效果完全一致 | - | 可接受 | local_cli |
-| 58 | ShowAgency | hcloud IAM ShowAgency | 效果完全一致 | - | 可接受 | local_cli |
-| 59 | ShowCustomPolicy | hcloud IAM ShowCustomPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 60 | ShowDomainApiAclPolicy | hcloud IAM ShowDomainApiAclPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 61 | ShowDomainConsoleAclPolicy | hcloud IAM ShowDomainConsoleAclPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 62 | ShowDomainLoginPolicy | hcloud IAM ShowDomainLoginPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 63 | ShowDomainPasswordPolicy | hcloud IAM ShowDomainPasswordPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 64 | ShowDomainProtectPolicy | hcloud IAM ShowDomainProtectPolicy | 效果完全一致 | - | 可接受 | local_cli |
-| 65 | ShowDomainQuota | hcloud IAM ShowDomainQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 66 | ShowDomainRoleAssignments | hcloud IAM ShowDomainRoleAssignments | 效果完全一致 | - | 可接受 | local_cli |
-| 67 | ShowMetadata | hcloud IAM ShowMetadata | 效果完全一致 | - | 可接受 | local_cli |
-| 68 | ShowOpenIdConnectConfig | hcloud IAM ShowOpenIdConnectConfig | 效果完全一致 | - | 可接受 | local_cli |
-| 69 | ShowPermanentAccessKey | hcloud IAM ShowPermanentAccessKey | 效果完全一致 | - | 可接受 | local_cli |
-| 70 | ShowProjectDetailsAndStatus | hcloud IAM ShowProjectDetailsAndStatus | 效果完全一致 | - | 可接受 | local_cli |
-| 71 | ShowProjectQuota | hcloud IAM ShowProjectQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 72 | ShowUser | hcloud IAM ShowUser | 效果完全一致 | - | 可接受 | local_cli |
-| 73 | ShowUserLoginProtect | hcloud IAM ShowUserLoginProtect | 效果完全一致 | - | 可接受 | local_cli |
-| 74 | ShowUserMfaDevice | hcloud IAM ShowUser | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | KeystoneListProjects | hcloud Iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | CheckAllProjectsPermissionForAgency | hcloud Iam CheckAllProjectsPermissionForAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | CheckDomainPermissionForAgency | hcloud Iam CheckDomainPermissionForAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | CheckProjectPermissionForAgency | hcloud Iam CheckProjectPermissionForAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 5 | KeystoneCheckroleForGroup | hcloud Iam KeystoneCheckroleForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 6 | KeystoneCheckDomainPermissionForGroup | hcloud Iam KeystoneCheckDomainPermissionForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 7 | KeystoneCheckProjectPermissionForGroup | hcloud Iam KeystoneCheckProjectPermissionForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 8 | KeystoneCheckUserInGroup | hcloud Iam KeystoneCheckUserInGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 9 | KeystoneListAllProjectPermissionsForGroup | hcloud Iam KeystoneListAllProjectPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 10 | KeystoneListAuthDomains | hcloud Iam KeystoneListAuthDomains | 效果完全一致 | - | 可接受 | local_cli |
+| 11 | KeystoneListAuthProjects | hcloud Iam KeystoneListAuthProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 12 | KeystoneListDomainPermissionsForGroup | hcloud Iam KeystoneListDomainPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 13 | KeystoneListEndpoints | hcloud Iam KeystoneListEndpoints | 效果完全一致 | - | 可接受 | local_cli |
+| 14 | KeystoneListFederationDomains | hcloud Iam KeystoneListFederationDomains | 效果完全一致 | - | 可接受 | local_cli |
+| 15 | KeystoneListFederationProjects | hcloud Iam KeystoneListFederationProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 16 | KeystoneListGroups | hcloud Iam KeystoneListGroups | 效果完全一致 | - | 可接受 | local_cli |
+| 17 | KeystoneListGroupsForUser | hcloud Iam KeystoneListGroupsForUser | 效果完全一致 | - | 可接受 | local_cli |
+| 18 | KeystoneListIdentityProviders | hcloud Iam KeystoneListIdentityProviders | 效果完全一致 | - | 可接受 | local_cli |
+| 19 | KeystoneListMappings | hcloud Iam KeystoneListMappings | 效果完全一致 | - | 可接受 | local_cli |
+| 20 | KeystoneListPermissions | hcloud Iam KeystoneListPermissions | 效果完全一致 | - | 可接受 | local_cli |
+| 21 | KeystoneListProjectsForUser | hcloud Iam KeystoneListProjectsForUser | 效果完全一致 | - | 可接受 | local_cli |
+| 22 | KeystoneListProjectPermissionsForGroup | hcloud Iam KeystoneListProjectPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 23 | KeystoneListProtocols | hcloud Iam KeystoneListProtocols | 效果完全一致 | - | 可接受 | local_cli |
+| 24 | KeystoneListRegions | hcloud Iam KeystoneListRegions | 效果完全一致 | - | 可接受 | local_cli |
+| 25 | KeystoneListServices | hcloud Iam KeystoneListServices | 效果完全一致 | - | 可接受 | local_cli |
+| 26 | KeystoneListUsers | hcloud Iam KeystoneListUsers | 效果完全一致 | - | 可接受 | local_cli |
+| 27 | KeystoneListUsersForGroupByAdmin | hcloud Iam KeystoneListUsersForGroupByAdmin | 效果完全一致 | - | 可接受 | local_cli |
+| 28 | KeystoneListVersions | hcloud Iam KeystoneListVersions | 效果完全一致 | - | 可接受 | local_cli |
+| 29 | KeystoneShowCatalog | hcloud Iam KeystoneShowCatalog | 效果完全一致 | - | 可接受 | local_cli |
+| 30 | KeystoneShowEndpoint | hcloud Iam KeystoneShowEndpoint | 效果完全一致 | - | 可接受 | local_cli |
+| 31 | KeystoneShowGroup | hcloud Iam KeystoneShowGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 32 | KeystoneShowIdentityProvider | hcloud Iam KeystoneShowIdentityProvider | 效果完全一致 | - | 可接受 | local_cli |
+| 33 | KeystoneShowMapping | hcloud Iam KeystoneShowMapping | 效果完全一致 | - | 可接受 | local_cli |
+| 34 | KeystoneShowPermission | hcloud Iam KeystoneShowPermission | 效果完全一致 | - | 可接受 | local_cli |
+| 35 | KeystoneShowProject | hcloud Iam KeystoneShowProject | 效果完全一致 | - | 可接受 | local_cli |
+| 36 | KeystoneShowProtocol | hcloud Iam KeystoneShowProtocol | 效果完全一致 | - | 可接受 | local_cli |
+| 37 | KeystoneShowRegion | hcloud Iam KeystoneShowRegion | 效果完全一致 | - | 可接受 | local_cli |
+| 38 | KeystoneShowSecurityCompliance | hcloud Iam KeystoneShowSecurityCompliance | 效果完全一致 | - | 可接受 | local_cli |
+| 39 | KeystoneShowSecurityComplianceByOption | hcloud Iam KeystoneShowSecurityComplianceByOption | 效果完全一致 | - | 可接受 | local_cli |
+| 40 | KeystoneShowService | hcloud Iam KeystoneShowService | 效果完全一致 | - | 可接受 | local_cli |
+| 41 | KeystoneShowUser | hcloud Iam KeystoneShowUser | 效果完全一致 | - | 可接受 | local_cli |
+| 42 | KeystoneShowVersion | hcloud Iam KeystoneShowVersion | 效果完全一致 | - | 可接受 | local_cli |
+| 43 | KeystoneValidateToken | hcloud Iam KeystoneValidateToken | 效果完全一致 | - | 可接受 | local_cli |
+| 44 | ListAgencies | hcloud Iam ListAgencies | 效果完全一致 | - | 可接受 | local_cli |
+| 45 | ListAllProjectsPermissionsForAgency | hcloud Iam ListAllProjectsPermissionsForAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 46 | ListCustomPolicies | hcloud Iam ListCustomPolicies | 效果完全一致 | - | 可接受 | local_cli |
+| 47 | ListDomainPermissionsForAgency | hcloud Iam ListDomainPermissionsForAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 48 | ListEnterpriseProjectsForGroup | hcloud Iam ListEnterpriseProjectsForGroup | 效果完全一致 | - | 可接受 | local_cli |
+| 49 | ListEnterpriseProjectsForUser | hcloud Iam ListEnterpriseProjectsForUser | 效果完全一致 | - | 可接受 | local_cli |
+| 50 | ListGroupsForEnterpriseProject | hcloud Iam ListGroupsForEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 51 | ListPermanentAccessKeys | hcloud Iam ListPermanentAccessKeys | 效果完全一致 | - | 可接受 | local_cli |
+| 52 | ListProjectPermissionsForAgency | hcloud Iam ListProjectPermissionsForAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 53 | ListRolesForGroupOnEnterpriseProject | hcloud Iam ListRolesForGroupOnEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 54 | ListRolesForUserOnEnterpriseProject | hcloud Iam ListRolesForUserOnEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 55 | ListUsersForEnterpriseProject | hcloud Iam ListUsersForEnterpriseProject | 效果完全一致 | - | 可接受 | local_cli |
+| 56 | ListUserLoginProtects | hcloud Iam ListUserLoginProtects | 效果完全一致 | - | 可接受 | local_cli |
+| 57 | ListUserMfaDevices | hcloud Iam ListUserMfaDevices | 效果完全一致 | - | 可接受 | local_cli |
+| 58 | ShowAgency | hcloud Iam ShowAgency | 效果完全一致 | - | 可接受 | local_cli |
+| 59 | ShowCustomPolicy | hcloud Iam ShowCustomPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 60 | ShowDomainApiAclPolicy | hcloud Iam ShowDomainApiAclPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 61 | ShowDomainConsoleAclPolicy | hcloud Iam ShowDomainConsoleAclPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 62 | ShowDomainLoginPolicy | hcloud Iam ShowDomainLoginPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 63 | ShowDomainPasswordPolicy | hcloud Iam ShowDomainPasswordPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 64 | ShowDomainProtectPolicy | hcloud Iam ShowDomainProtectPolicy | 效果完全一致 | - | 可接受 | local_cli |
+| 65 | ShowDomainQuota | hcloud Iam ShowDomainQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 66 | ShowDomainRoleAssignments | hcloud Iam ShowDomainRoleAssignments | 效果完全一致 | - | 可接受 | local_cli |
+| 67 | ShowMetadata | hcloud Iam ShowMetadata | 效果完全一致 | - | 可接受 | local_cli |
+| 68 | ShowOpenIdConnectConfig | hcloud Iam ShowOpenIdConnectConfig | 效果完全一致 | - | 可接受 | local_cli |
+| 69 | ShowPermanentAccessKey | hcloud Iam ShowPermanentAccessKey | 效果完全一致 | - | 可接受 | local_cli |
+| 70 | ShowProjectDetailsAndStatus | hcloud Iam ShowProjectDetailsAndStatus | 效果完全一致 | - | 可接受 | local_cli |
+| 71 | ShowProjectQuota | hcloud Iam ShowProjectQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 72 | ShowUser | hcloud Iam ShowUser | 效果完全一致 | - | 可接受 | local_cli |
+| 73 | ShowUserLoginProtect | hcloud Iam ShowUserLoginProtect | 效果完全一致 | - | 可接受 | local_cli |
+| 74 | ShowUserMfaDevice | hcloud Iam ShowUser | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

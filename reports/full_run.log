@@ -1,1294 +1,194 @@
-﻿2026-06-10 17:02:07 | skills_analyzer | INFO | main | Starting analysis with config: skills_repo=./cache/skills-repo
-2026-06-10 17:02:07 | skills_analyzer | INFO | main | Skill names: all
-2026-06-10 17:02:07 | skills_analyzer | INFO | main | Resume mode: False
-2026-06-10 17:02:07 | skills_analyzer | INFO | main | LLM enhanced: enabled
-2026-06-10 17:02:07 | skills_analyzer | INFO | main | LLM provider: openai, model: glm-5.1
-2026-06-10 17:02:07 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-bucket-create
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:07 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:07 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:07 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:07 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-bucket-create -> KooCLI (CLI evidence: 3, SDK evidence: 0)
-2026-06-10 17:02:07 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: KooCLI
-2026-06-10 17:02:07 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:07 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:02:07 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:07 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:02:07 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:07 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:07 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:07 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:07 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-bucket-create_analysis_report.md
-2026-06-10 17:02:07 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-bucket-create_analysis_report.md
-2026-06-10 17:02:07 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-stats
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:07 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:07 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:07 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:07 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:07 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-stats -> KooCLI (CLI evidence: 4, SDK evidence: 0)
-2026-06-10 17:02:07 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: KooCLI
-2026-06-10 17:02:07 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:07 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:02:07 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:02:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:08 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-stats_analysis_report.md
-2026-06-10 17:02:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-stats_analysis_report.md
-2026-06-10 17:02:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-upload
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-upload -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:02:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:02:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:02:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:02:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:08 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-upload_analysis_report.md
-2026-06-10 17:02:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-upload_analysis_report.md
-2026-06-10 17:02:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-website-host
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-website-host -> SDK (CLI evidence: 0, SDK evidence: 2)
-2026-06-10 17:02:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:02:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
-2026-06-10 17:02:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.setBucketWebsite
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.close
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.setBucketCustomDomain
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.headBucket
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.getBucketLocation
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 0 Open APIs mapped, 5 mappings failed
-2026-06-10 17:02:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:08 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-website-host_analysis_report.md
-2026-06-10 17:02:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-website-host_analysis_report.md
-2026-06-10 17:02:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-storage-query
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-storage-query -> SDK (CLI evidence: 0, SDK evidence: 161)
-2026-06-10 17:02:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:02:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 11 dependencies found
-2026-06-10 17:02:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:09 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:02:09 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
-2026-06-10 17:02:09 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Cbr.new_builder
-2026-06-10 17:02:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Evs.new_builder
-2026-06-10 17:02:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.new_builder
-2026-06-10 17:02:12 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: SFSTurbo.new_builder
-2026-06-10 17:02:13 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 86 Open APIs mapped, 6 mappings failed
-2026-06-10 17:02:13 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 86 Open APIs found
-2026-06-10 17:02:13 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 86 APIs analyzed
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:23 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-storage-query_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-storage-query_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-cce-env-assessment
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:23 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-cce-env-assessment -> HYBRID (CLI evidence: 7, SDK evidence: 1)
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: HYBRID
-2026-06-10 17:02:23 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 6 dependencies found
-2026-06-10 17:02:23 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:02:23 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:23 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-cce-env-assessment_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-cce-env-assessment_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-sac-new-api
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:23 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-sac-new-api -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:02:23 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
-2026-06-10 17:02:23 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:02:23 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:23 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-sac-new-api_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-sac-new-api_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-sac-yolo
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:23 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-sac-yolo -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:02:23 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 3 dependencies found
-2026-06-10 17:02:23 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:02:23 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:23 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:23 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-sac-yolo_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-sac-yolo_analysis_report.md
-2026-06-10 17:02:23 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-iam-query
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:23 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:23 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:23 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:24 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-iam-query -> SDK (CLI evidence: 0, SDK evidence: 213)
-2026-06-10 17:02:24 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:02:24 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:24 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 7 dependencies found
-2026-06-10 17:02:24 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:24 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:02:24 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_account_summary_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_agency_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_asymmetric_signature_switch_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_authorization_schema_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_feature_status_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_policy_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_policy_version_v5
-2026-06-10 17:02:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_service_linked_agency_deletion_status_v5
-2026-06-10 17:02:28 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_access_keys_v5
-2026-06-10 17:02:28 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_agencies_v5
-2026-06-10 17:02:28 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_attached_agency_policies_v5
-2026-06-10 17:02:28 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_attached_group_policies_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_attached_user_policies_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_entities_for_policy_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_groups_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_mfa_devices_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_policies_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_policy_versions_v5
-2026-06-10 17:02:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_registered_services_for_auth_schema_v5
-2026-06-10 17:02:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_resource_tags_v5
-2026-06-10 17:02:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_service_principals_v5
-2026-06-10 17:02:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_access_key_last_used_v5
-2026-06-10 17:02:31 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_group_summary
-2026-06-10 17:02:31 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_group_v5
-2026-06-10 17:02:31 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_login_policy_v5
-2026-06-10 17:02:31 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_login_profile_v5
-2026-06-10 17:02:31 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_password_policy_v5
-2026-06-10 17:02:32 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_user_last_login_v5
-2026-06-10 17:02:32 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.show_user_v5
-2026-06-10 17:02:32 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 74 Open APIs mapped, 31 mappings failed
-2026-06-10 17:02:32 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 74 Open APIs found
-2026-06-10 17:02:32 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:32 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 74 APIs analyzed
-2026-06-10 17:02:32 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:32 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-iam-query_analysis_report.md
-2026-06-10 17:02:32 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-iam-query_analysis_report.md
-2026-06-10 17:02:32 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-eip-cost-optimizer
-2026-06-10 17:02:32 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:32 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:32 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:32 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:32 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:32 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:32 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:32 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-eip-cost-optimizer -> SDK (CLI evidence: 0, SDK evidence: 11)
-2026-06-10 17:02:32 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:02:32 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:32 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 5 dependencies found
-2026-06-10 17:02:32 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:32 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.new_builder
-2026-06-10 17:02:32 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 2 Open APIs mapped, 1 mappings failed
-2026-06-10 17:02:32 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 2 Open APIs found
-2026-06-10 17:02:32 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:02:34 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 2 APIs analyzed
-2026-06-10 17:02:34 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:02:34 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-eip-cost-optimizer_analysis_report.md
-2026-06-10 17:02:34 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-eip-cost-optimizer_analysis_report.md
-2026-06-10 17:02:34 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-network-query
-2026-06-10 17:02:34 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:02:34 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:02:34 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:02:34 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:02:34 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:02:34 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:02:35 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:02:35 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-network-query -> SDK (CLI evidence: 0, SDK evidence: 435)
-2026-06-10 17:02:35 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:02:35 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:02:35 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 13 dependencies found
-2026-06-10 17:02:35 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:02:37 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:02:37 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
-2026-06-10 17:02:37 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Dns.new_builder
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.count_eip_available_resources
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.new_builder
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_bandwidth
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_bandwidths_limit
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_common_pools
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_eip_bandwidths
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_project_geip_bindings
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_publicip_pool
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_share_bandwidth_types
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.list_tenant_vpc_igws
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.show_internal_vpc_igw
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.show_publicip_pool
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.show_publicip_pool_types
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.count_preoccupy_ip_num
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.new_builder
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_all_l7_rules
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_all_members
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_api_versions
-2026-06-10 17:02:40 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_availability_zones
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_domain_i_ps
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_feature_configs
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_flavors
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_health_monitors
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_ip_groups
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_jobs
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_l7_policies
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_l7_rules
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_loadbalancer_feature
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_load_balancers
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_logtanks
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_master_slave_pools
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_quota_details
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_recycle_bin_load_balancers
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_security_policies
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_system_security_policies
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_certificate_private_key_echo
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_flavor
-2026-06-10 17:02:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_health_monitor
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_ip_group
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_ip_group_related_listeners
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_job
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_l7_policy
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_l7_rule
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_load_balancer
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_load_balancer_ports
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_load_balancer_status
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_load_balancer_topology
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_logtank
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_master_slave_pool
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_member_health_check_job
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_quota
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_recycle_bin
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.show_security_policy
-2026-06-10 17:02:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Nat.new_builder
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_address_group
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.new_builder
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_address_groups_dependency
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_firewall
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_sub_network_interfaces
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_traffic_mirror_filters
-2026-06-10 17:02:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_traffic_mirror_filter_rules
-2026-06-10 17:02:45 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_traffic_mirror_sessions
-2026-06-10 17:02:45 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_virsubnets
-2026-06-10 17:02:45 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.list_virsubnet_cidr_reservations
-2026-06-10 17:02:45 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_address_group
-2026-06-10 17:02:45 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_firewall
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_sub_network_interface
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_sub_network_interfaces_quantity
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_traffic_mirror_filter
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_traffic_mirror_filter_rule
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_traffic_mirror_session
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_virsubnet
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.show_virsubnet_cidr_reservation
-2026-06-10 17:02:46 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpn.new_builder
-2026-06-10 17:02:48 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 147 Open APIs mapped, 77 mappings failed
-2026-06-10 17:02:48 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 147 Open APIs found
-2026-06-10 17:02:48 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:01 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 147 APIs analyzed
-2026-06-10 17:03:01 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:01 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-network-query_analysis_report.md
-2026-06-10 17:03:01 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-network-query_analysis_report.md
-2026-06-10 17:03:01 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ces-ecs-monitoring
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:01 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:01 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:01 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:01 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ces-ecs-monitoring -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:01 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:01 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:01 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:01 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:01 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:01 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:01 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:01 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:01 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:01 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ces-ecs-monitoring_analysis_report.md
-2026-06-10 17:03:01 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ces-ecs-monitoring_analysis_report.md
-2026-06-10 17:03:01 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ecs-alert
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:01 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:01 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:01 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:01 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:01 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ecs-alert -> KooCLI (CLI evidence: 29, SDK evidence: 0)
-2026-06-10 17:03:01 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: KooCLI
-2026-06-10 17:03:01 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:02 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:02 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:02 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:02 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:02 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:02 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:02 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ecs-alert_analysis_report.md
-2026-06-10 17:03:02 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ecs-alert_analysis_report.md
-2026-06-10 17:03:02 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-monitoring-query
-2026-06-10 17:03:02 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:02 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:02 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:02 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:02 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:02 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:02 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-monitoring-query -> SDK (CLI evidence: 0, SDK evidence: 65)
-2026-06-10 17:03:02 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:02 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:02 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 9 dependencies found
-2026-06-10 17:03:02 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_agent_dimension_info
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.new_builder
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_alarm_rules
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_alarm_rule_policies
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_alarm_rule_resources
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_alarm_template_association_alarms
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_ces_target_project_tags
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_dashboard_infos
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_dashboard_widgets
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_notification_masks
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_notification_mask_resources
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_one_click_alarms
-2026-06-10 17:03:02 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_one_click_alarm_rules
-2026-06-10 17:03:03 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_resource_groups
-2026-06-10 17:03:03 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.list_resource_groups_services_resources
-2026-06-10 17:03:03 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.show_alarm_template
-2026-06-10 17:03:03 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.show_widget
-2026-06-10 17:03:03 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eps.new_builder
-2026-06-10 17:03:03 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 15 Open APIs mapped, 20 mappings failed
-2026-06-10 17:03:03 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 15 Open APIs found
-2026-06-10 17:03:03 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 15 APIs analyzed
-2026-06-10 17:03:08 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-monitoring-query_analysis_report.md
-2026-06-10 17:03:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-monitoring-query_analysis_report.md
-2026-06-10 17:03:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-cli-guidance
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-cli-guidance -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:08 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-cli-guidance_analysis_report.md
-2026-06-10 17:03:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-cli-guidance_analysis_report.md
-2026-06-10 17:03:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-find-skills
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-find-skills -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:08 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-find-skills_analysis_report.md
-2026-06-10 17:03:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-find-skills_analysis_report.md
-2026-06-10 17:03:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-terraform-generator
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:09 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-terraform-generator -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:09 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:09 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:09 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:09 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:09 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:09 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:09 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-terraform-generator_analysis_report.md
-2026-06-10 17:03:09 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-terraform-generator_analysis_report.md
-2026-06-10 17:03:09 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-terraform-installer
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:09 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:09 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:09 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:09 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-terraform-installer -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:09 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:09 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 6 dependencies found
-2026-06-10 17:03:09 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:09 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:09 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:09 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:09 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-terraform-installer_analysis_report.md
-2026-06-10 17:03:09 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-terraform-installer_analysis_report.md
-2026-06-10 17:03:09 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-cce-cluster-management
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:09 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:09 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:09 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:09 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:09 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-cce-cluster-management -> SDK (CLI evidence: 0, SDK evidence: 46)
-2026-06-10 17:03:09 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:09 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 25 dependencies found
-2026-06-10 17:03:09 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:09 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Cce.show_addon
-2026-06-10 17:03:10 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ecs.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ces.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Aom.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Cce.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Evs.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Eip.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.new_builder
-2026-06-10 17:03:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:03:12 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 27 Open APIs mapped, 10 mappings failed
-2026-06-10 17:03:12 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 27 Open APIs found
-2026-06-10 17:03:12 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:14 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 27 APIs analyzed
-2026-06-10 17:03:14 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:14 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-cce-cluster-management_analysis_report.md
-2026-06-10 17:03:14 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-cce-cluster-management_analysis_report.md
-2026-06-10 17:03:14 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-cci-instance-management
-2026-06-10 17:03:14 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:14 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:14 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:14 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:14 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:14 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:14 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:14 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-cci-instance-management -> HYBRID (CLI evidence: 3, SDK evidence: 1)
-2026-06-10 17:03:14 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: HYBRID
-2026-06-10 17:03:14 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:14 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
-2026-06-10 17:03:14 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:14 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 3 Open APIs mapped, 0 mappings failed
-2026-06-10 17:03:14 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 3 Open APIs found
-2026-06-10 17:03:14 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 3 APIs analyzed
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:18 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-cci-instance-management_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-cci-instance-management_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-swr-enterprise-instance
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:18 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-swr-enterprise-instance -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:18 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-swr-enterprise-instance_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-swr-enterprise-instance_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-swr-image-automation
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:18 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-swr-image-automation -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:18 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-swr-image-automation_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-swr-image-automation_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-swr-image-governance
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:18 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-swr-image-governance -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:18 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-swr-image-governance_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-swr-image-governance_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-swr-image-management
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:18 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-swr-image-management -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:18 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-swr-image-management_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-swr-image-management_analysis_report.md
-2026-06-10 17:03:18 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ucs-cluster-onboarding-manager
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:18 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:18 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ucs-cluster-onboarding-manager -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:18 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:18 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:18 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:18 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:19 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ucs-cluster-onboarding-manager_analysis_report.md
-2026-06-10 17:03:19 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ucs-cluster-onboarding-manager_analysis_report.md
-2026-06-10 17:03:19 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ucs-policy-governor
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:19 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:19 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:19 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ucs-policy-governor -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:19 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:19 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:19 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:19 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:19 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:19 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:19 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:19 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:19 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ucs-policy-governor_analysis_report.md
-2026-06-10 17:03:19 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ucs-policy-governor_analysis_report.md
-2026-06-10 17:03:19 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-flexus-l-deploy-jiuwenswarm
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:19 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:19 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:19 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:19 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-flexus-l-deploy-jiuwenswarm -> SDK (CLI evidence: 0, SDK evidence: 24)
-2026-06-10 17:03:19 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:19 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-python : <unknown>:277: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. 
-Did you mean "\\s"? A raw string is also an option.
-所在位置 行:1 字符: 1
-+ python main.py 2>&1 | Out-File -FilePath reports\\full_run.log -Encod ...
-+ ~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (<unknown>:277: ...also an option.:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-2026-06-10 17:03:19 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 10 dependencies found
-2026-06-10 17:03:19 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-<unknown>:277: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you m
-ean "\\s"? A raw string is also an option.
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Rms.new_builder
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Rms.create_script
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Rms.execute_script
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Coc.new_builder
-2026-06-10 17:03:19 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 4 Open APIs mapped, 4 mappings failed
-2026-06-10 17:03:19 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 4 Open APIs found
-2026-06-10 17:03:19 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:24 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 4 APIs analyzed
-2026-06-10 17:03:24 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:24 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-flexus-l-deploy-jiuwenswarm_analysis_report.md
-2026-06-10 17:03:24 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-flexus-l-deploy-jiuwenswarm_analysis_report.md
-2026-06-10 17:03:24 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-flexus-l-server-hermes-deployment
-2026-06-10 17:03:24 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:24 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:24 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:24 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:24 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:24 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:24 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:24 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-flexus-l-server-hermes-deployment -> SDK (CLI evidence: 0, SDK evidence: 3)
-2026-06-10 17:03:24 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:24 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:24 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 9 dependencies found
-2026-06-10 17:03:24 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Coc.new_builder
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:25 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 1 Open APIs mapped, 6 mappings failed
-2026-06-10 17:03:25 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 1 Open APIs found
-2026-06-10 17:03:25 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:27 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 1 APIs analyzed
-2026-06-10 17:03:27 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:27 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-flexus-l-server-hermes-deployment_analysis_report.md
-2026-06-10 17:03:27 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-flexus-l-server-hermes-deployment_analysis_report.md
-2026-06-10 17:03:27 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-flexus-l-server-manage
-2026-06-10 17:03:27 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:27 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:27 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:27 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:27 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:27 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:27 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:27 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-flexus-l-server-manage -> SDK (CLI evidence: 0, SDK evidence: 3)
-2026-06-10 17:03:27 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:27 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:27 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 10 dependencies found
-2026-06-10 17:03:27 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:27 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Bss.new_builder
-2026-06-10 17:03:27 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 2 Open APIs mapped, 1 mappings failed
-2026-06-10 17:03:27 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 2 Open APIs found
-2026-06-10 17:03:27 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:29 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 2 APIs analyzed
-2026-06-10 17:03:29 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:29 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-flexus-l-server-manage_analysis_report.md
-2026-06-10 17:03:29 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-flexus-l-server-manage_analysis_report.md
-2026-06-10 17:03:29 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-flexus-l-server-openclaw-deployment
-2026-06-10 17:03:29 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:29 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:29 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:29 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:29 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:29 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:29 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:29 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-flexus-l-server-openclaw-deployment -> SDK (CLI evidence: 0, SDK evidence: 3)
-2026-06-10 17:03:29 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:29 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:29 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 9 dependencies found
-2026-06-10 17:03:29 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:29 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Coc.new_builder
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 5 Open APIs mapped, 1 mappings failed
-2026-06-10 17:03:30 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 5 Open APIs found
-2026-06-10 17:03:30 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:30 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 5 APIs analyzed
-2026-06-10 17:03:30 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:30 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-flexus-l-server-openclaw-deployment_analysis_report.md
-2026-06-10 17:03:30 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-flexus-l-server-openclaw-deployment_analysis_report.md
-2026-06-10 17:03:30 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-flexus-l-server-ops
-2026-06-10 17:03:30 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:30 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:30 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:30 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:30 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:30 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:30 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-flexus-l-server-ops -> SDK (CLI evidence: 0, SDK evidence: 23)
-2026-06-10 17:03:30 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:30 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:30 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 7 dependencies found
-2026-06-10 17:03:30 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ecs.new_builder
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Bss.new_builder
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Config.new_builder
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: FlexusL
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: FlexusL
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: InstanceQuery
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: InstanceQuery
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: InstanceQuery
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: InstanceQuery
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: InstanceQuery
-2026-06-10 17:03:30 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 9 Open APIs mapped, 10 mappings failed
-2026-06-10 17:03:30 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 9 Open APIs found
-2026-06-10 17:03:30 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:35 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 9 APIs analyzed
-2026-06-10 17:03:35 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:35 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-flexus-l-server-ops_analysis_report.md
-2026-06-10 17:03:35 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-flexus-l-server-ops_analysis_report.md
-2026-06-10 17:03:35 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-flexus-l-server-scripts-excute
-2026-06-10 17:03:35 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:35 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:35 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:35 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:35 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:35 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:35 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:35 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-flexus-l-server-scripts-excute -> SDK (CLI evidence: 0, SDK evidence: 4)
-2026-06-10 17:03:35 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:35 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:35 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 6 dependencies found
-2026-06-10 17:03:35 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Coc.new_builder
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Client
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 0 Open APIs mapped, 6 mappings failed
-2026-06-10 17:03:36 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:36 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:36 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:36 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:36 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-flexus-l-server-scripts-excute_analysis_report.md
-2026-06-10 17:03:36 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-flexus-l-server-scripts-excute_analysis_report.md
-2026-06-10 17:03:36 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-functiongraph-function-create
-2026-06-10 17:03:36 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:36 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:36 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:36 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:36 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:36 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:36 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-functiongraph-function-create -> SDK (CLI evidence: 0, SDK evidence: 3)
-2026-06-10 17:03:36 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:36 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:36 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 3 dependencies found
-2026-06-10 17:03:36 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: FunctionGraph.new_builder
-2026-06-10 17:03:36 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 1 Open APIs mapped, 1 mappings failed
-2026-06-10 17:03:36 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 1 Open APIs found
-2026-06-10 17:03:36 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:38 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 1 APIs analyzed
-2026-06-10 17:03:38 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:38 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-functiongraph-function-create_analysis_report.md
-2026-06-10 17:03:38 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-functiongraph-function-create_analysis_report.md
-2026-06-10 17:03:38 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-functiongraph-trigger-create
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:38 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:38 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:38 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:38 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-functiongraph-trigger-create -> SDK (CLI evidence: 0, SDK evidence: 3)
-2026-06-10 17:03:38 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:38 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:38 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 3 dependencies found
-2026-06-10 17:03:38 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:38 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: FunctionGraph.new_builder
-2026-06-10 17:03:38 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 2 Open APIs mapped, 1 mappings failed
-2026-06-10 17:03:38 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 2 Open APIs found
-2026-06-10 17:03:38 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:38 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 2 APIs analyzed
-2026-06-10 17:03:38 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:38 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-functiongraph-trigger-create_analysis_report.md
-2026-06-10 17:03:38 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-functiongraph-trigger-create_analysis_report.md
-2026-06-10 17:03:38 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-computing-query
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:38 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:38 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:38 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:38 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:38 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-computing-query -> SDK (CLI evidence: 0, SDK evidence: 195)
-2026-06-10 17:03:38 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:38 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:38 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 13 dependencies found
-2026-06-10 17:03:38 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:39 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:03:39 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
-2026-06-10 17:03:39 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: As.new_builder
-2026-06-10 17:03:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Vpc.new_builder
-2026-06-10 17:03:41 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Bms.new_builder
-2026-06-10 17:03:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ecs.new_builder
-2026-06-10 17:03:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ims.new_builder
-2026-06-10 17:03:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 95 Open APIs mapped, 7 mappings failed
-2026-06-10 17:03:44 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 95 Open APIs found
-2026-06-10 17:03:44 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:51 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 95 APIs analyzed
-2026-06-10 17:03:51 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:51 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-computing-query_analysis_report.md
-2026-06-10 17:03:51 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-computing-query_analysis_report.md
-2026-06-10 17:03:51 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-billing-scout
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:51 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:51 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:51 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:51 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-billing-scout -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:51 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:51 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:51 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
-2026-06-10 17:03:51 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:51 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:51 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:51 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:51 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:51 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:51 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-billing-scout_analysis_report.md
-2026-06-10 17:03:51 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-billing-scout_analysis_report.md
-2026-06-10 17:03:51 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-business-support-query
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:51 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:51 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:51 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:51 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:51 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-business-support-query -> SDK (CLI evidence: 0, SDK evidence: 96)
-2026-06-10 17:03:51 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:51 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:51 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 14 dependencies found
-2026-06-10 17:03:51 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.new_builder
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Bms.new_builder
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.list_flavors
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Elb.new_builder
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Nat.new_builder
-2026-06-10 17:03:52 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Bss.new_builder
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Ecs.new_builder
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: SFSTurbo.new_builder
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 43 Open APIs mapped, 9 mappings failed
-2026-06-10 17:03:54 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 43 Open APIs found
-2026-06-10 17:03:54 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:54 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 43 APIs analyzed
-2026-06-10 17:03:54 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:54 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-business-support-query_analysis_report.md
-2026-06-10 17:03:54 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-business-support-query_analysis_report.md
-2026-06-10 17:03:54 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ges-graph
-2026-06-10 17:03:54 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:54 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:54 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:54 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:54 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:54 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:54 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ges-graph -> SDK (CLI evidence: 0, SDK evidence: 4)
-2026-06-10 17:03:54 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:54 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:54 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
-2026-06-10 17:03:54 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: GES.execute_cypher
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: GES.execute_gql
-2026-06-10 17:03:54 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: GES.get_schema
-2026-06-10 17:03:55 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: GES.get_graph_stats
-2026-06-10 17:03:55 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 0 Open APIs mapped, 4 mappings failed
-2026-06-10 17:03:55 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:55 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:55 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:55 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:55 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ges-graph_analysis_report.md
-2026-06-10 17:03:55 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ges-graph_analysis_report.md
-2026-06-10 17:03:55 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-maas-tokens-usage
-2026-06-10 17:03:55 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:55 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:55 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:55 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:55 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:55 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:55 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:55 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-maas-tokens-usage -> SDK (CLI evidence: 0, SDK evidence: 1)
-2026-06-10 17:03:55 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:55 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:55 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
-2026-06-10 17:03:55 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:55 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: iam.get_projects
-2026-06-10 17:03:55 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 2 Open APIs mapped, 1 mappings failed
-2026-06-10 17:03:55 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 2 Open APIs found
-2026-06-10 17:03:55 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 2 APIs analyzed
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-maas-tokens-usage_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-maas-tokens-usage_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascend-command
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascend-command -> SDK (CLI evidence: 0, SDK evidence: 3)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 5 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: Npu
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 0 Open APIs mapped, 35 mappings failed
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascend-command_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascend-command_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascend-models-deploy
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascend-models-deploy -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 1 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascend-models-deploy_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascend-models-deploy_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascend-op-mfu-calculator
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascend-op-mfu-calculator -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 1 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascend-op-mfu-calculator_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascend-op-mfu-calculator_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascend-profiler-db-explorer
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascend-profiler-db-explorer -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 3 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascend-profiler-db-explorer_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascend-profiler-db-explorer_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascend-remote-connect
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascend-remote-connect -> SDK (CLI evidence: 0, SDK evidence: 2)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 11 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | Service not found in SDK source: SSH
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 0 Open APIs mapped, 7 mappings failed
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascend-remote-connect_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascend-remote-connect_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascend-small-model-migrate
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascend-small-model-migrate -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascend-small-model-migrate_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascend-small-model-migrate_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-ascendc-operator-performance-optim
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-ascendc-operator-performance-optim -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 1 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-ascendc-operator-performance-optim_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-ascendc-operator-performance-optim_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-msmodelslim-model-adapt
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-msmodelslim-model-adapt -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 7 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-msmodelslim-model-adapt_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-msmodelslim-model-adapt_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-msmodelslim-model-analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-msmodelslim-model-analysis -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 1 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-msmodelslim-model-analysis_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-msmodelslim-model-analysis_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-msot-msopprof-operator-profiler
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | SDK source ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | CLI tool ready
-2026-06-10 17:03:58 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
-2026-06-10 17:03:58 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-msot-msopprof-operator-profiler -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
-2026-06-10 17:03:58 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 1 dependencies found
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
-2026-06-10 17:03:58 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
-2026-06-10 17:03:58 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Starting report generation
-2026-06-10 17:03:58 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-msot-msopprof-operator-profiler_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-msot-msopprof-operator-profiler_analysis_report.md
-2026-06-10 17:03:58 | skills_analyzer | INFO | main | 
-============================================================
-2026-06-10 17:03:58 | skills_analyzer | INFO | main | Analysis Summary
-2026-06-10 17:03:58 | skills_analyzer | INFO | main | ============================================================
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-obs-bucket-create: impl=KooCLI, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-obs-stats: impl=KooCLI, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-obs-upload: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-obs-website-host: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-storage-query: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-cce-env-assessment: impl=HYBRID, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-sac-new-api: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-sac-yolo: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-iam-query: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-eip-cost-optimizer: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-network-query: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ces-ecs-monitoring: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ecs-alert: impl=KooCLI, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-monitoring-query: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-cli-guidance: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-find-skills: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-terraform-generator: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-terraform-installer: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-cce-cluster-management: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-cci-instance-management: impl=HYBRID, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-swr-enterprise-instance: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-swr-image-automation: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-swr-image-governance: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-swr-image-management: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ucs-cluster-onboarding-manager: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ucs-policy-governor: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-flexus-l-deploy-jiuwenswarm: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-flexus-l-server-hermes-deployment: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-flexus-l-server-manage: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-flexus-l-server-openclaw-deployment: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-flexus-l-server-ops: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-flexus-l-server-scripts-excute: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-functiongraph-function-create: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-functiongraph-trigger-create: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-computing-query: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-billing-scout: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-business-support-query: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ges-graph: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-maas-tokens-usage: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascend-command: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascend-models-deploy: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascend-op-mfu-calculator: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascend-profiler-db-explorer: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascend-remote-connect: impl=SDK, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascend-small-model-migrate: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-ascendc-operator-performance-optim: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-msmodelslim-model-adapt: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-msmodelslim-model-analysis: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   huawei-cloud-msot-msopprof-operator-profiler: impl=UNKNOWN, status=completed, apis=0, correspondences=0, conclusion=N/A
-2026-06-10 17:03:58 | skills_analyzer | INFO | main | 
-Total: 49 skills analyzed
-2026-06-10 17:03:58 | skills_analyzer | INFO | main |   Completed: 49, Partial: 0, Failed: 0
+﻿2026-06-11 09:10:42 | skills_analyzer | INFO | main | Starting analysis with config: skills_repo=./cache/skills-repo
+2026-06-11 09:10:42 | skills_analyzer | INFO | main | Skill names: all
+2026-06-11 09:10:42 | skills_analyzer | INFO | main | Resume mode: False
+2026-06-11 09:10:42 | skills_analyzer | INFO | main | LLM enhanced: enabled
+2026-06-11 09:10:42 | skills_analyzer | INFO | main | LLM provider: openai, model: glm-5.1
+2026-06-11 09:10:42 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-bucket-create
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:10:42 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:10:42 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:10:42 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:10:42 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-bucket-create -> KooCLI (CLI evidence: 3, SDK evidence: 0)
+2026-06-11 09:10:42 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: KooCLI
+2026-06-11 09:10:42 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:10:42 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
+2026-06-11 09:10:42 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:10:42 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
+2026-06-11 09:10:42 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:10:42 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:10:42 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:10:42 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:10:42 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-bucket-create_analysis_report.md
+2026-06-11 09:10:42 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-bucket-create_analysis_report.md
+2026-06-11 09:10:42 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-stats
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:10:42 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:10:42 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:10:42 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:10:42 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:10:42 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-stats -> KooCLI (CLI evidence: 4, SDK evidence: 0)
+2026-06-11 09:10:42 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: KooCLI
+2026-06-11 09:10:42 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
+2026-06-11 09:10:43 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
+2026-06-11 09:10:43 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:10:43 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:10:43 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:10:43 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-stats_analysis_report.md
+2026-06-11 09:10:43 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-stats_analysis_report.md
+2026-06-11 09:10:43 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-upload
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:10:43 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:10:43 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:10:43 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-upload -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
+2026-06-11 09:10:43 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
+2026-06-11 09:10:43 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 2 dependencies found
+2026-06-11 09:10:43 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
+2026-06-11 09:10:43 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:10:43 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:10:43 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:10:43 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-upload_analysis_report.md
+2026-06-11 09:10:43 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-upload_analysis_report.md
+2026-06-11 09:10:43 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-obs-website-host
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:10:43 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:10:43 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:10:43 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:10:43 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-obs-website-host -> SDK (CLI evidence: 0, SDK evidence: 2)
+2026-06-11 09:10:43 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
+2026-06-11 09:10:43 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
+2026-06-11 09:10:43 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.setBucketWebsite
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.close
+2026-06-11 09:10:43 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.setBucketCustomDomain
+2026-06-11 09:10:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.headBucket
+2026-06-11 09:10:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Obs.getBucketLocation
+2026-06-11 09:10:44 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 0 Open APIs mapped, 5 mappings failed
+2026-06-11 09:10:44 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:10:44 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:10:44 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:10:44 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:10:44 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-obs-website-host_analysis_report.md
+2026-06-11 09:10:44 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-obs-website-host_analysis_report.md
+2026-06-11 09:10:44 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-storage-query
+2026-06-11 09:10:44 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:10:44 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:10:44 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:10:44 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:10:44 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:10:44 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:10:44 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:10:44 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-storage-query -> SDK (CLI evidence: 0, SDK evidence: 161)
+2026-06-11 09:10:44 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
+2026-06-11 09:10:44 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:10:44 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 11 dependencies found
+2026-06-11 09:10:44 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:10:45 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
+2026-06-11 09:10:55 | skills_analyzer | INFO | SdkInterfaceAnalyzer | SDK analysis: 86 Open APIs mapped, 1 mappings failed
+2026-06-11 09:10:55 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 86 Open APIs found
+2026-06-11 09:10:55 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:11:06 | skills_analyzer | INFO | cli_coverage_analysis | KooCLI correspondence analysis completed: 86 APIs analyzed
+2026-06-11 09:11:06 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:11:06 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-storage-query_analysis_report.md
+2026-06-11 09:11:06 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-storage-query_analysis_report.md
+2026-06-11 09:11:06 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-cce-env-assessment
+2026-06-11 09:11:06 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:11:06 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:11:06 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:11:06 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:11:06 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:11:06 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:11:06 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:11:07 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-cce-env-assessment -> HYBRID (CLI evidence: 7, SDK evidence: 1)
+2026-06-11 09:11:07 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: HYBRID
+2026-06-11 09:11:07 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:11:07 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 6 dependencies found
+2026-06-11 09:11:07 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:11:07 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
+2026-06-11 09:11:07 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:11:07 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:11:07 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:11:07 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:11:07 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-cce-env-assessment_analysis_report.md
+2026-06-11 09:11:07 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-cce-env-assessment_analysis_report.md
+2026-06-11 09:11:07 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-sac-new-api
+2026-06-11 09:11:07 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:11:07 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:11:07 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:11:07 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:11:07 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:11:07 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:11:07 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:11:07 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-sac-new-api -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
+2026-06-11 09:11:07 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
+2026-06-11 09:11:07 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:11:07 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 4 dependencies found
+2026-06-11 09:11:07 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:11:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
+2026-06-11 09:11:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:11:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:11:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:11:08 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:11:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-sac-new-api_analysis_report.md
+2026-06-11 09:11:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-sac-new-api_analysis_report.md
+2026-06-11 09:11:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-sac-yolo
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:11:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:11:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:11:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:11:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-sac-yolo -> UNKNOWN (CLI evidence: 0, SDK evidence: 0)
+2026-06-11 09:11:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: UNKNOWN
+2026-06-11 09:11:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:11:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 3 dependencies found
+2026-06-11 09:11:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:11:08 | skills_analyzer | INFO | SdkInterfaceAnalyzer | No SDK calls found in skill source
+2026-06-11 09:11:08 | skills_analyzer | INFO | sdk_interface_analysis | SDK analysis completed: 0 Open APIs found
+2026-06-11 09:11:08 | skills_analyzer | INFO | cli_coverage_analysis | Starting KooCLI correspondence analysis
+2026-06-11 09:11:08 | skills_analyzer | INFO | cli_coverage_analysis | Skipped: no Open API usages to analyze
+2026-06-11 09:11:08 | skills_analyzer | INFO | report_generation | Starting report generation
+2026-06-11 09:11:08 | skills_analyzer | INFO | ReportGenerator | Report saved to: reports\huawei-cloud-sac-yolo_analysis_report.md
+2026-06-11 09:11:08 | skills_analyzer | INFO | report_generation | Report generated: reports\huawei-cloud-sac-yolo_analysis_report.md
+2026-06-11 09:11:08 | skills_analyzer | INFO | analyze_all_skills | Analyzing skill: huawei-cloud-iam-query
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | Starting resource preparation
+2026-06-11 09:11:08 | skills_analyzer | INFO | SdkSourceManager | SDK source cache is valid, using cached version
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | SDK source ready
+2026-06-11 09:11:08 | skills_analyzer | INFO | CliToolManager | KooCLI is already installed
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | CLI tool ready
+2026-06-11 09:11:08 | skills_analyzer | INFO | resource_preparation | Resource preparation finished: completed
+2026-06-11 09:11:08 | skills_analyzer | INFO | impl_type_detection | Starting implementation type detection
+2026-06-11 09:11:08 | skills_analyzer | INFO | ImplTypeDetector | Detected: huawei-cloud-iam-query -> SDK (CLI evidence: 0, SDK evidence: 213)
+2026-06-11 09:11:08 | skills_analyzer | INFO | impl_type_detection | Detected implementation type: SDK
+2026-06-11 09:11:08 | skills_analyzer | INFO | tool_analysis | Starting skill tool analysis
+2026-06-11 09:11:08 | skills_analyzer | INFO | tool_analysis | Tool analysis completed: 7 dependencies found
+2026-06-11 09:11:08 | skills_analyzer | INFO | sdk_interface_analysis | Starting SDK interface analysis
+2026-06-11 09:11:10 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_users_v5
+2026-06-11 09:11:10 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_account_summary_v5
+2026-06-11 09:11:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_agency_v5
+2026-06-11 09:11:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_asymmetric_signature_switch_v5
+2026-06-11 09:11:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_authorization_schema_v5
+2026-06-11 09:11:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_feature_status_v5
+2026-06-11 09:11:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_policy_v5
+2026-06-11 09:11:11 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_policy_version_v5
+2026-06-11 09:11:12 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.get_service_linked_agency_deletion_status_v5
+2026-06-11 09:15:50 | skills_analyzer | INFO | SdkInterfaceAnalyzer | HTTP info not found: Iam.list_access_keys_v5

@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Queries Huawei Cloud computing resources (ECS/BMS/IMS/AS), Covers ECS instances, flavors, keypairs, quotas, server groups, block devices, NICs, VNC console, BMS bare metal servers/flavors/quotas, IMS images/OS versions/members/quotas, and AS scaling groups/configs/policies/activity logs/lifecycle... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:41:14.304476+00:00 |
+| 分析时间 | 2026-06-11T01:45:51.280580+00:00 |
 
 ## Skill依赖工具
 
@@ -140,7 +140,7 @@
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | KeystoneListProjects | hcloud IAM KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | KeystoneListProjects | hcloud Iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
 | 2 | ListAllScalingV2Policies | hcloud As ListAllScalingV2Policies | 效果完全一致 | - | 可接受 | local_cli |
 | 3 | ListApiVersions | hcloud As ListApiVersions | 效果完全一致 | - | 可接受 | local_cli |
 | 4 | ListGroupScheduledTasks | hcloud As ListGroupScheduledTasks | 效果完全一致 | - | 可接受 | local_cli |
@@ -172,21 +172,21 @@
 | 30 | ShowWarmPoolNew | hcloud As ShowWarmPoolNew | 效果完全一致 | - | 可接受 | local_cli |
 | 31 | ListVpcs | hcloud VPC ListVpcs/v2 | 效果完全一致 | - | 可接受 | local_cli |
 | 32 | ListSubnets | hcloud VPC ListSubnets | 效果完全一致 | - | 可接受 | local_cli |
-| 33 | ListBaremetalFlavorDetailExtends | hcloud BMS ListBaremetalFlavorDetailExtends | 效果完全一致 | - | 可接受 | local_cli |
-| 34 | ListBareMetalServers | hcloud BMS ListBareMetalServerDetails | 效果完全一致 | - | 可接受 | local_cli |
-| 35 | ListBareMetalServersDetail | hcloud BMS ListBareMetalServersDetail | 效果完全一致 | - | 可接受 | local_cli |
-| 36 | ListBareMetalServerDetails | hcloud BMS ListBareMetalServerDetails | 效果完全一致 | - | 可接受 | local_cli |
-| 37 | ShowAvailableResource | hcloud BMS ShowAvailableResource | 效果完全一致 | - | 可接受 | local_cli |
-| 38 | ShowBaremetalServerInterfaceAttachments | hcloud BMS ShowBaremetalServerInterfaceAttachments | 效果完全一致 | - | 可接受 | local_cli |
-| 39 | ShowBaremetalServerTags | hcloud BMS ShowBaremetalServerTags | 效果完全一致 | - | 可接受 | local_cli |
-| 40 | ShowBaremetalServerVolumeInfo | hcloud BMS ShowBaremetalServerVolumeInfo | 效果完全一致 | - | 可接受 | local_cli |
-| 41 | ShowJobInfos | hcloud BMS ShowJobInfos | 效果完全一致 | - | 可接受 | local_cli |
-| 42 | ShowMetadataOptions | hcloud BMS ShowMetadataOptions | 效果完全一致 | - | 可接受 | local_cli |
-| 43 | ShowResetPwd | hcloud BMS ShowResetPwd | 效果完全一致 | - | 可接受 | local_cli |
-| 44 | ShowServerRemoteConsole | hcloud BMS ShowServerRemoteConsole | 效果完全一致 | - | 可接受 | local_cli |
-| 45 | ShowSpecifiedVersion | hcloud BMS ShowSpecifiedVersion | 效果完全一致 | - | 可接受 | local_cli |
-| 46 | ShowTenantQuota | hcloud BMS ShowTenantQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 47 | ShowWindowsBaremetalServerPwd | hcloud BMS ShowWindowsBaremetalServerPwd | 效果完全一致 | - | 可接受 | local_cli |
+| 33 | ListBaremetalFlavorDetailExtends | hcloud Bms ListBaremetalFlavorDetailExtends | 效果完全一致 | - | 可接受 | local_cli |
+| 34 | ListBareMetalServers | hcloud Bms ListBareMetalServerDetails | 效果完全一致 | - | 可接受 | local_cli |
+| 35 | ListBareMetalServersDetail | hcloud Bms ListBareMetalServersDetail | 效果完全一致 | - | 可接受 | local_cli |
+| 36 | ListBareMetalServerDetails | hcloud Bms ListBareMetalServerDetails | 效果完全一致 | - | 可接受 | local_cli |
+| 37 | ShowAvailableResource | hcloud Bms ShowAvailableResource | 效果完全一致 | - | 可接受 | local_cli |
+| 38 | ShowBaremetalServerInterfaceAttachments | hcloud Bms ShowBaremetalServerInterfaceAttachments | 效果完全一致 | - | 可接受 | local_cli |
+| 39 | ShowBaremetalServerTags | hcloud Bms ShowBaremetalServerTags | 效果完全一致 | - | 可接受 | local_cli |
+| 40 | ShowBaremetalServerVolumeInfo | hcloud Bms ShowBaremetalServerVolumeInfo | 效果完全一致 | - | 可接受 | local_cli |
+| 41 | ShowJobInfos | hcloud Bms ShowJobInfos | 效果完全一致 | - | 可接受 | local_cli |
+| 42 | ShowMetadataOptions | hcloud Bms ShowMetadataOptions | 效果完全一致 | - | 可接受 | local_cli |
+| 43 | ShowResetPwd | hcloud Bms ShowResetPwd | 效果完全一致 | - | 可接受 | local_cli |
+| 44 | ShowServerRemoteConsole | hcloud Bms ShowServerRemoteConsole | 效果完全一致 | - | 可接受 | local_cli |
+| 45 | ShowSpecifiedVersion | hcloud Bms ShowSpecifiedVersion | 效果完全一致 | - | 可接受 | local_cli |
+| 46 | ShowTenantQuota | hcloud Bms ShowTenantQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 47 | ShowWindowsBaremetalServerPwd | hcloud Bms ShowWindowsBaremetalServerPwd | 效果完全一致 | - | 可接受 | local_cli |
 | 48 | ListCloudServers | hcloud ECS ListCloudServers | 效果完全一致 | - | 可接受 | local_cli |
 | 49 | ListFlavors | hcloud ECS ListFlavors | 效果完全一致 | - | 可接受 | local_cli |
 | 50 | ListFlavorSellPolicies | hcloud ECS ListFlavorSellPolicies | 效果完全一致 | - | 可接受 | local_cli |
@@ -223,18 +223,18 @@
 | 81 | ShowServerPassword | hcloud ECS ShowServerPassword | 效果完全一致 | - | 可接受 | local_cli |
 | 82 | ShowServerRemoteConsole | hcloud ECS ShowServerRemoteConsole | 效果完全一致 | - | 可接受 | local_cli |
 | 83 | ShowServerTags | hcloud ECS ShowServerTags | 效果完全一致 | - | 可接受 | local_cli |
-| 84 | ListImages | hcloud IMS ListImages | 效果完全一致 | - | 可接受 | local_cli |
-| 85 | ListImagesTags | hcloud IMS ListImagesTags | 效果完全一致 | - | 可接受 | local_cli |
-| 86 | ListImageByTags | hcloud IMS ListImageByTags | 效果完全一致 | - | 可接受 | local_cli |
-| 87 | ListImageMembers | hcloud IMS ListImageMembers | 效果完全一致 | - | 可接受 | local_cli |
-| 88 | ListImageTags | hcloud IMS ListImageTags | 效果完全一致 | - | 可接受 | local_cli |
-| 89 | ListOsVersions | hcloud IMS ListOsVersions | 效果完全一致 | - | 可接受 | local_cli |
-| 90 | ListTags | hcloud IMS ListTags | 效果完全一致 | - | 可接受 | local_cli |
-| 91 | GlanceShowImage | hcloud IMS GlanceShowImage | 效果完全一致 | - | 可接受 | local_cli |
-| 92 | ShowImageMember | hcloud IMS ShowImageMember | 效果完全一致 | - | 可接受 | local_cli |
-| 93 | ShowImageQuota | hcloud IMS ShowImageQuota | 效果完全一致 | - | 可接受 | local_cli |
-| 94 | ShowJob | hcloud IMS ShowJob | 效果完全一致 | - | 可接受 | local_cli |
-| 95 | ShowJobProgress | hcloud IMS ShowJobProgress | 效果完全一致 | - | 可接受 | local_cli |
+| 84 | ListImages | hcloud Ims ListImages | 效果完全一致 | - | 可接受 | local_cli |
+| 85 | ListImagesTags | hcloud Ims ListImagesTags | 效果完全一致 | - | 可接受 | local_cli |
+| 86 | ListImageByTags | hcloud Ims ListImageByTags | 效果完全一致 | - | 可接受 | local_cli |
+| 87 | ListImageMembers | hcloud Ims ListImageMembers | 效果完全一致 | - | 可接受 | local_cli |
+| 88 | ListImageTags | hcloud Ims ListImageTags | 效果完全一致 | - | 可接受 | local_cli |
+| 89 | ListOsVersions | hcloud Ims ListOsVersions | 效果完全一致 | - | 可接受 | local_cli |
+| 90 | ListTags | hcloud Ims ListTags | 效果完全一致 | - | 可接受 | local_cli |
+| 91 | GlanceShowImage | hcloud Ims GlanceShowImage | 效果完全一致 | - | 可接受 | local_cli |
+| 92 | ShowImageMember | hcloud Ims ShowImageMember | 效果完全一致 | - | 可接受 | local_cli |
+| 93 | ShowImageQuota | hcloud Ims ShowImageQuota | 效果完全一致 | - | 可接受 | local_cli |
+| 94 | ShowJob | hcloud Ims ShowJob | 效果完全一致 | - | 可接受 | local_cli |
+| 95 | ShowJobProgress | hcloud Ims ShowJobProgress | 效果完全一致 | - | 可接受 | local_cli |
 
 
 

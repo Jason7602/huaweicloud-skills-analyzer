@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Create and configure scheduled TIMER triggers for Huawei Cloud FunctionGraph functions using Quartz Cron expressions. Use this skill when users ask to create triggers, schedule function execution, set up periodic tasks, or configure timers for functions. Triggered by keywords like "create trigger... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:53.572554+00:00 |
+| 分析时间 | 2026-06-11T01:45:26.454671+00:00 |
 
 ## Skill依赖工具
 

@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Upload local files or directories to Huawei Cloud OBS (Object Storage Service) buckets, list OBS buckets with capacity and object count, and schedule periodic uploads via crontab. Use this skill when the user wants to: (1) upload a local file or directory to an OBS bucket, (2) list OBS buckets an... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:38:31.754966+00:00 |
+| 分析时间 | 2026-06-11T01:42:31.796925+00:00 |
 
 ## Skill依赖工具
 

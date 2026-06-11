@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Create Huawei Cloud Flexus L Instance (Lightweight Server), deploy OpenClaw application platform on it, and support installation and configuration of models and channels for deployed OpenClaw instances. Web UI access needs to be manually enabled in Huawei Cloud console. Trigger words: "Deploy Ope... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:42.844973+00:00 |
+| 分析时间 | 2026-06-11T01:45:13.452640+00:00 |
 
 ## Skill依赖工具
 
@@ -28,59 +28,57 @@
 
 ### 阶段结论
 
-共识别5个Open API接口。
+共识别7个Open API接口。
 
 | 序号 | 服务 | Open API接口 | HTTP方法 | API路径 | 来源SDK调用 | 实际使用参数 | 业务作用 | 是否必须 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | hcss | PostUnknown | POST |  | SignerBypass.post_unknown (scripts\lib.py:254) | resource_path, http_method | 通过hcss服务执行PostUnknown操作 | mandatory |
-| 2 | Coc | CreateScript | POST | /v1/job/scripts | CocClient.create_script (scripts\lib.py:397) | - | 通过Coc服务执行create操作，作用对象为scripts | mandatory |
-| 3 | Coc | ExecuteScript | POST | /v1/job/scripts/{script_uuid} | CocClient.execute_script (scripts\lib.py:524) | - | 通过Coc服务执行ExecuteScript操作，作用对象为scripts | mandatory |
-| 4 | Coc | ListScripts | GET | /v1/job/scripts | CocClient.list_scripts (scripts\lib.py:651) | - | 通过Coc服务执行list操作，作用对象为scripts | mandatory |
-| 5 | Coc | GetScriptJobBatch | GET | /v1/job/script/orders/{execute_uuid}/batches/{batch_index} | CocClient.get_script_job_batch (scripts\lib.py:760) | - | 通过Coc服务执行get操作，作用对象为batches | mandatory |
+| 1 | iam | KeystoneListProjects | GET | /v3/projects | SignerBypass.keystone_list_projects (scripts\lib.py:82) | resource_path, http_method | 通过iam服务执行list操作，作用对象为projects | mandatory |
+| 2 | iam | CreateLightInstances | POST | /v1/light-instances | SignerBypass.create_light_instances (scripts\lib.py:254) | resource_path, http_method | 通过iam服务执行create操作，作用对象为light-instances | mandatory |
+| 3 | Coc | CreateScript | POST | /v1/job/scripts | CocClient.create_script (scripts\lib.py:397) | - | 通过Coc服务执行create操作，作用对象为scripts | mandatory |
+| 4 | Coc | ExecuteScript | POST | /v1/job/scripts/{script_uuid} | CocClient.execute_script (scripts\lib.py:524) | - | 通过Coc服务执行ExecuteScript操作，作用对象为scripts | mandatory |
+| 5 | Coc | ListScripts | GET | /v1/job/scripts | CocClient.list_scripts (scripts\lib.py:651) | - | 通过Coc服务执行list操作，作用对象为scripts | mandatory |
+| 6 | Coc | GetScriptJobBatch | GET | /v1/job/script/orders/{execute_uuid}/batches/{batch_index} | CocClient.get_script_job_batch (scripts\lib.py:760) | - | 通过Coc服务执行get操作，作用对象为batches | mandatory |
+| 7 | iam | ListResources | GET | /v1/resources | SignerBypass.list_resources (scripts\lib.py:1406) | resource_path, http_method | 通过iam服务执行list操作，作用对象为resources | mandatory |
 
 ## 第二阶段：KooCLI命令一一对应关系与效果完全一致判定
 
 ### 阶段结论
 
-共分析5个Open API接口，其中4个存在效果完全一致的KooCLI命令。
+共分析7个Open API接口，其中7个存在效果完全一致的KooCLI命令。
 
 | 序号 | Open API接口 | 对应KooCLI命令 | 判定状态 | 差异说明 | 是否可接受 | 信息来源 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | PostUnknown | - | 无对应命令 | 无对应KooCLI命令 | 不可接受 | none |
-| 2 | CreateScript | hcloud COC CreateScript | 效果完全一致 | - | 可接受 | local_cli |
-| 3 | ExecuteScript | hcloud COC ExecuteScript | 效果完全一致 | - | 可接受 | local_cli |
-| 4 | ListScripts | hcloud COC ListScripts | 效果完全一致 | - | 可接受 | local_cli |
-| 5 | GetScriptJobBatch | hcloud COC GetScriptJobBatch | 效果完全一致 | - | 可接受 | local_cli |
+| 1 | KeystoneListProjects | hcloud iam KeystoneListProjects | 效果完全一致 | - | 可接受 | local_cli |
+| 2 | CreateLightInstances | hcloud iam CreateAccessKeyV5 | 效果完全一致 | - | 可接受 | local_cli |
+| 3 | CreateScript | hcloud COC CreateScript | 效果完全一致 | - | 可接受 | local_cli |
+| 4 | ExecuteScript | hcloud COC ExecuteScript | 效果完全一致 | - | 可接受 | local_cli |
+| 5 | ListScripts | hcloud COC ListScripts | 效果完全一致 | - | 可接受 | local_cli |
+| 6 | GetScriptJobBatch | hcloud COC GetScriptJobBatch | 效果完全一致 | - | 可接受 | local_cli |
+| 7 | ListResources | hcloud iam KeystoneListAllProjectPermissionsForGroup | 效果完全一致 | - | 可接受 | local_cli |
 
-
-### 不完全一致或无对应命令接口清单
-- PostUnknown
-
-通过在本地实际使用KooCLI命令查询，发现PostUnknown确实没有与之对应的KooCLI命令。
 
 
 ## 第三阶段：全部改用KooCLI后的业务效果等价性结论
 
 | 项目 | 内容 |
 | --- | --- |
-| 替换结论 | 不能完全替换 |
-| 结论原因 | 存在必须接口无对应KooCLI命令。 |
+| 替换结论 | 可以完全替换 |
+| 结论原因 | 所有接口均存在对应的KooCLI命令。 |
 
 ### 关键阻塞点
 
-| 序号 | 关联接口 | 阻塞原因 | 业务影响 | 建议处理方式 |
-| --- | --- | --- | --- | --- |
-| 1 | PostUnknown | 无对应KooCLI命令 | 无法完全迁移该接口能力 | 保留SDK实现或人工验证KooCLI组合命令是否可接受 |
+
+无关键阻塞点。
 
 ## 第四阶段：KooCLI本地验证结论
 
-基于规则分析，存在必须接口无法通过KooCLI实现等效替换（PostUnknown），结论为不能完全替换。存在必须接口无对应KooCLI命令。建议保留这些接口的SDK实现方式，或探索KooCLI组合命令是否可达到近似业务效果。
+基于规则分析，所有必须接口均存在效果完全一致的KooCLI命令，结论为可以完全替换。所有接口均存在对应的KooCLI命令。建议在实际替换前，通过本地KooCLI命令行工具对关键接口进行端到端验证，确认返回结果格式和业务流程无差异。
 
 ## 最终结论
 
 
-该Skill是否能够全部改用KooCLI并达到与Huawei Cloud SDK实现一致的业务效果：**不能完全替换**。
+该Skill是否能够全部改用KooCLI并达到与Huawei Cloud SDK实现一致的业务效果：**可以完全替换**。
 
-原因：存在必须接口无对应KooCLI命令。
+原因：所有接口均存在对应的KooCLI命令。
 
 

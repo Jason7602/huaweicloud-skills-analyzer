@@ -8,7 +8,7 @@
 | 实现方式 | SDK |
 | 业务目标 | Provides temporary SSH remote connection for Huawei Cloud Ascend devices with dynamic host/port/user/password input (in-memory only), disk management, NPU monitoring, container management, security auditing and log analysis; sensitive operations require user confirmation before execution Use this... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:41:27.706895+00:00 |
+| 分析时间 | 2026-06-11T01:46:07.463383+00:00 |
 
 ## Skill依赖工具
 

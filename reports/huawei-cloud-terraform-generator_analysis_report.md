@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Generate Huawei Cloud Terraform configurations and execute deployment with user-guided approval. Use this skill when users want to create Huawei Cloud infrastructure as Terraform, whether they ask explicitly for Terraform or describe goals such as deploying a website, launching an application, or... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:15.109703+00:00 |
+| 分析时间 | 2026-06-11T01:44:40.340139+00:00 |
 
 ## Skill依赖工具
 

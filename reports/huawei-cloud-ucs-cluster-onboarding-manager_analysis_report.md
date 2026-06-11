@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud UCS (Universal Cloud Service) cluster onboarding, lifecycle, and fleet grouping management skill using hcloud CLI. Use this skill when the user wants to: (1) register self-managed or CCE clusters to UCS - register/query/remove, (2) manage cluster lifecycle - update/query/list cluster... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:29.096406+00:00 |
+| 分析时间 | 2026-06-11T01:44:57.520981+00:00 |
 
 ## Skill依赖工具
 

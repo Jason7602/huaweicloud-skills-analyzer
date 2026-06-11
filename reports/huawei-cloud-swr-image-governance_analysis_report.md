@@ -8,7 +8,7 @@
 | 实现方式 | UNKNOWN |
 | 业务目标 | Huawei Cloud SWR (Software Repository for Container) image governance skill using hcloud CLI. Use this skill when the user wants to: (1) manage SWR namespace permissions - grant/query/modify/revoke, (2) manage repository permissions - grant/query/modify/revoke, (3) manage image retention rules - ... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:40:28.560905+00:00 |
+| 分析时间 | 2026-06-11T01:44:56.956318+00:00 |
 
 ## Skill依赖工具
 

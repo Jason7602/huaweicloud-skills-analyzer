@@ -8,7 +8,7 @@
 | 实现方式 | KooCLI |
 | 业务目标 | Query Huawei Cloud OBS (Object Storage Service) statistics: list buckets with capacity and object counts, query extranet/intranet download traffic with month-over-month comparison, and query total requests with month-over-month comparison. Use this skill when the user wants to: (1) list OBS bucke... |
 | 分析状态 | completed |
-| 分析时间 | 2026-06-10T14:38:31.491099+00:00 |
+| 分析时间 | 2026-06-11T01:42:31.511220+00:00 |
 
 ## Skill依赖工具
 
